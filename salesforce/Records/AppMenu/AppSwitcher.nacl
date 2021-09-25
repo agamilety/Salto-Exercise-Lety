@@ -1,0 +1,89 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+    {
+      name = salesforce.CustomApplication.instance.standard__Platform
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Service
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Marketing
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__ServiceConsole
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AppLauncher
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Community
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sites
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Chatter
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Content
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Insights
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningSalesConsole
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningService
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningSales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningInstrumentation
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AllTabSet
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__QueueManagement
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningScheduler
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningBolt
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.Salto
+      type = "ConnectedApp"
+    },
+  ]
+}

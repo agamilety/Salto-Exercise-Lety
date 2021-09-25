@@ -1,0 +1,118 @@
+type salesforce.PlatformEventChannelMember {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string eventChannel {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ActivityEngagementVirtualChannel",
+        "ChangeDataCaptureDiffeoStandard",
+        "ChangeDataStandardSales",
+        "ChangeEvents",
+        "CommerceChangeEvents",
+        "ConsentCDCChannel",
+        "ConversationIntelligenceVirtualChannel",
+        "CreChangeEvents",
+        "EinsteinDiscoveryWBChannel",
+        "EinsteinPlatformStandardChannel",
+        "FTestStandardChannel",
+        "FTestStandardInternalChannel",
+        "GlobalIdentityStandard",
+        "IsotopeStandardChangeEvents",
+        "PardotSyncStdChannel",
+        "SlackAlertsEventChannel",
+        "VideoCall",
+        "WorkPlansCDCEventChannel",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.PlatformEventChannel,
+    ]
+  }
+  string selectedEntity {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountChangeEvent",
+        "AccountContactRoleChangeEvent",
+        "AssetChangeEvent",
+        "AssignedResourceChangeEvent",
+        "AuthorizationFormConsentChangeEvent",
+        "CampaignChangeEvent",
+        "CampaignMemberChangeEvent",
+        "CampaignMemberStatusChangeEvent",
+        "CaseChangeEvent",
+        "CommSubscriptionConsentChangeEvent",
+        "ContactChangeEvent",
+        "ContactPointAddressChangeEvent",
+        "ContactPointConsentChangeEvent",
+        "ContactPointEmailChangeEvent",
+        "ContactPointPhoneChangeEvent",
+        "ContactPointTypeConsentChangeEvent",
+        "ContractChangeEvent",
+        "ContractLineItemChangeEvent",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
+        "EntitlementChangeEvent",
+        "EventChangeEvent",
+        "EventRelationChangeEvent",
+        "FinanceBalanceSnapshotChangeEvent",
+        "FinanceTransactionChangeEvent",
+        "IndividualChangeEvent",
+        "LeadChangeEvent",
+        "ListEmailChangeEvent",
+        "LocationChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
+        "OpportunityChangeEvent",
+        "OpportunityContactRoleChangeEvent",
+        "OrderChangeEvent",
+        "OrderItemChangeEvent",
+        "PartyConsentChangeEvent",
+        "Pricebook2ChangeEvent",
+        "Product2ChangeEvent",
+        "QuickTextChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
+        "ResourceAbsenceChangeEvent",
+        "ReturnOrderChangeEvent",
+        "ReturnOrderLineItemChangeEvent",
+        "ServiceAppointmentChangeEvent",
+        "ServiceContractChangeEvent",
+        "ServiceResourceChangeEvent",
+        "ServiceTerritoryChangeEvent",
+        "ServiceTerritoryMemberChangeEvent",
+        "TaskChangeEvent",
+        "TaskRelationChangeEvent",
+        "UserChangeEvent",
+        "WorkOrderChangeEvent",
+        "WorkOrderLineItemChangeEvent",
+        "WorkTypeChangeEvent",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "platformEventChannelMember"
+  dirName = "platformEventChannelMembers"
+  metadataType = "PlatformEventChannelMember"
+}

@@ -1,0 +1,149 @@
+salesforce.Layout SessionHijackingEventStore_Session_Hijacking_Event_Store_Layout@bssss {
+  fullName = "SessionHijackingEventStore-Session Hijacking Event Store Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Event Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SessionHijackingEventStore.field.SessionHijackingEventNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SessionHijackingEventStore.field.EventIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.Summary
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SessionHijackingEventStore.field.EventDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.Score
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Event Data"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.CurrentIp
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.CurrentPlatform
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.CurrentScreen
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.CurrentWindow
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.CurrentUserAgent
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.SecurityEventData
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.PreviousIp
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.PreviousPlatform
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.PreviousScreen
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.PreviousWindow
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.PreviousUserAgent
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.UserId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SessionHijackingEventStore.field.SourceIp
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Response",
+      ]
+      relatedList = "RelatedFeedback"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.SessionHijackingEventStore,
+  ]
+}

@@ -1,0 +1,299 @@
+type salesforce.MessagingEndUser {
+  serviceid Id {
+    apiName = "MessagingEndUser.Id"
+    label = "Messaging User ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "MessagingEndUser.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = "false"
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "MessagingEndUser.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "MessagingEndUser.Name"
+    label = "Messaging User Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "MessagingEndUser.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "MessagingEndUser.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "MessagingEndUser.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "MessagingEndUser.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "MessagingEndUser.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MessagingChannelId {
+    apiName = "MessagingEndUser.MessagingChannelId"
+    label = "Messaging Channel ID"
+    _required = true
+    referenceTo = [
+      "MessagingChannel",
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "MessagingChannel"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Picklist MessageType {
+    apiName = "MessagingEndUser.MessageType"
+    label = "Message Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Text"
+        default = false
+        label = "Text"
+        isActive = true
+      },
+      {
+        fullName = "Facebook"
+        default = false
+        label = "Facebook"
+        isActive = true
+      },
+      {
+        fullName = "Line"
+        default = false
+        label = "Line"
+        isActive = true
+      },
+      {
+        fullName = "GoogleHome"
+        default = false
+        label = "Google Home"
+        isActive = true
+      },
+      {
+        fullName = "Alexa"
+        default = false
+        label = "Alexa"
+        isActive = true
+      },
+      {
+        fullName = "Omega"
+        default = false
+        label = "Omega"
+        isActive = true
+      },
+      {
+        fullName = "AppleBusinessChat"
+        default = false
+        label = "Apple Business Chat"
+        isActive = true
+      },
+      {
+        fullName = "WeChat"
+        default = false
+        label = "WeChat"
+        isActive = true
+      },
+      {
+        fullName = "WebChat"
+        default = false
+        label = "Chat"
+        isActive = true
+      },
+      {
+        fullName = "WhatsApp"
+        default = false
+        label = "WhatsApp"
+        isActive = true
+      },
+      {
+        fullName = "Phone"
+        default = false
+        label = "Phone"
+        isActive = true
+      },
+      {
+        fullName = "EmbeddedMessaging"
+        default = false
+        label = "Embedded Messaging"
+        isActive = true
+      },
+      {
+        fullName = "Voice"
+        default = false
+        label = "Voice"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text MessagingPlatformKey {
+    apiName = "MessagingEndUser.MessagingPlatformKey"
+    label = "Messaging Platform Key"
+    _required = true
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Text Locale {
+    apiName = "MessagingEndUser.Locale"
+    label = "Locale"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 20
+    queryable = true
+  }
+  salesforce.Url ProfilePictureUrl {
+    apiName = "MessagingEndUser.ProfilePictureUrl"
+    label = "Profile Picture URL"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text IsoCountryCode {
+    apiName = "MessagingEndUser.IsoCountryCode"
+    label = "ISO Country Code"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 2
+    queryable = true
+  }
+  salesforce.Picklist MessagingConsentStatus {
+    apiName = "MessagingEndUser.MessagingConsentStatus"
+    label = "Messaging Consent Status"
+    valueSet = [
+      {
+        fullName = "OptedOut"
+        default = false
+        label = "Opted Out"
+        isActive = true
+      },
+      {
+        fullName = "ImplicitlyOptedIn"
+        default = false
+        label = "Implicitly Opted In"
+        isActive = true
+      },
+      {
+        fullName = "ExplicitlyOptedIn"
+        default = false
+        label = "Explicitly Opted In"
+        isActive = true
+      },
+      {
+        fullName = "DoublyOptedIn"
+        default = false
+        label = "Doubly Opted In"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsFullyOptedIn {
+    apiName = "MessagingEndUser.IsFullyOptedIn"
+    label = "Opted In"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "MessagingEndUser.AccountId"
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "MessagingEndUser.ContactId"
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Unknown HasInitialResponseSent {
+    apiName = "MessagingEndUser.HasInitialResponseSent"
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,48 @@
+salesforce.Layout WorkTypeGroupMember_Work_Type_Group_Member_Layout@bssss {
+  fullName = "WorkTypeGroupMember-Work Type Group Member Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkTypeGroupMember.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.WorkTypeGroupMember.field.WorkTypeGroupId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.WorkTypeGroupMember.field.WorkTypeId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.WorkTypeGroupMember,
+  ]
+}

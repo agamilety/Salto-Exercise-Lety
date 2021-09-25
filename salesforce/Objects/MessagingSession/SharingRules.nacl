@@ -1,0 +1,6 @@
+salesforce.SharingRules MessagingSession {
+  fullName = "MessagingSession"
+  _parent = [
+    salesforce.MessagingSession,
+  ]
+}

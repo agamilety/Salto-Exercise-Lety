@@ -1,0 +1,31 @@
+type salesforce.EntitlementProcessMilestoneTimeTrigger {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.WorkflowActionReference actions {
+  }
+  number timeLength {
+  }
+  string workflowTimeTriggerUnit {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Days",
+        "Hours",
+        "Minutes",
+      ]
+    }
+  }
+  metadataType = "EntitlementProcessMilestoneTimeTrigger"
+}

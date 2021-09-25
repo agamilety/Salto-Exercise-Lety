@@ -1,0 +1,44 @@
+salesforce.CustomApplication standard__LightningService {
+  fullName = "standard__LightningService"
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Service Console"
+  navType = "Console"
+  setupExperience = "service"
+  tabs = [
+    "standard-Case",
+    "standard-Contact",
+    "standard-Account",
+    "standard-report",
+    "standard-Dashboard",
+    "standard-home",
+  ]
+  uiType = "Lightning"
+  utilityBar = "LightningService_UtilityBar"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-Account"
+      },
+      {
+        tab = "standard-Case"
+      },
+      {
+        tab = "standard-Contact"
+      },
+      {
+        tab = "standard-Dashboard"
+      },
+      {
+        tab = "standard-home"
+      },
+      {
+        tab = "standard-report"
+      },
+    ]
+  }
+}

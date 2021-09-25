@@ -1,0 +1,101 @@
+type salesforce.ServiceTerritoryWorkType {
+  serviceid Id {
+    apiName = "ServiceTerritoryWorkType.Id"
+    label = "Service Territory Work Type ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ServiceTerritoryWorkType.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ServiceTerritoryWorkType.Name"
+    label = "Service Territory Work Type Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ServiceTerritoryWorkType.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ServiceTerritoryWorkType.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ServiceTerritoryWorkType.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ServiceTerritoryWorkType.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ServiceTerritoryWorkType.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "ServiceTerritoryWorkType.WorkTypeId"
+    label = "Work Type ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "ServiceTerritoryWorkType.ServiceTerritoryId"
+    label = "Territory ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ServiceTerritory"
+    queryable = true
+    trackHistory = "false"
+  }
+}

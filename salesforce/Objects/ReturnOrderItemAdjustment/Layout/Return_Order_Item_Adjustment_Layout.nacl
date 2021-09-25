@@ -1,0 +1,88 @@
+salesforce.Layout ReturnOrderItemAdjustment_Return_Order_Item_Adjustment_Layout@bssss {
+  fullName = "ReturnOrderItemAdjustment-Return Order Item Adjustment Layout"
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Return Order Item Adjustment Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderItemAdjustment.field.ReturnOrderLineItemId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderItemAdjustment.field.ReturnOrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderItemAdjustment.field.Description
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Return Order Item Adjustment Totals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderItemAdjustment.field.Amount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderItemAdjustment.field.TotalAmtWithTax
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderItemAdjustment.field.TotalTaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Type",
+        "Amount",
+        "Rate",
+        "TaxEffectiveDate",
+        "Description",
+      ]
+      relatedList = "ReturnOrderItemTaxes"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ReturnOrderItemAdjustment,
+  ]
+}

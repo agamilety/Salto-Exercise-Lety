@@ -1,0 +1,308 @@
+type salesforce.EntityMilestone {
+  serviceid Id {
+    apiName = "EntityMilestone.Id"
+    label = "Object Milestone ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "EntityMilestone.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "EntityMilestone.Name"
+    label = "Object Milestone Name"
+    _required = true
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "EntityMilestone.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "EntityMilestone.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "EntityMilestone.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "EntityMilestone.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "EntityMilestone.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentEntityId {
+    apiName = "EntityMilestone.ParentEntityId"
+    label = "Work Order ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkOrder,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "ParentEntity"
+    queryable = true
+    trackHistory = "false"
+    _hidden_value = true
+  }
+  salesforce.DateTime StartDate {
+    apiName = "EntityMilestone.StartDate"
+    label = "Start Date"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime TargetDate {
+    apiName = "EntityMilestone.TargetDate"
+    label = "Target Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CompletionDate {
+    apiName = "EntityMilestone.CompletionDate"
+    label = "Completion Date"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SlaProcessId {
+    apiName = "EntityMilestone.SlaProcessId"
+    label = "Entitlement Process ID"
+    referenceTo = [
+      "SlaProcess",
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "SlaProcess"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MilestoneTypeId {
+    apiName = "EntityMilestone.MilestoneTypeId"
+    label = "Milestone Type ID"
+    referenceTo = [
+      salesforce.MilestoneType,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "MilestoneType"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsCompleted {
+    apiName = "EntityMilestone.IsCompleted"
+    label = "Completed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsViolated {
+    apiName = "EntityMilestone.IsViolated"
+    label = "Violation"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TargetResponseInMins {
+    apiName = "EntityMilestone.TargetResponseInMins"
+    label = "Target Response (Mins)"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TargetResponseInHrs {
+    apiName = "EntityMilestone.TargetResponseInHrs"
+    label = "Target Response (Hours)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TargetResponseInDays {
+    apiName = "EntityMilestone.TargetResponseInDays"
+    label = "Target Response (Days)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TimeRemainingInMins {
+    apiName = "EntityMilestone.TimeRemainingInMins"
+    label = "Time Remaining (Min:Sec)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TimeRemainingInHrs {
+    apiName = "EntityMilestone.TimeRemainingInHrs"
+    label = "Time Remaining (Hour:Min)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TimeRemainingInDays {
+    apiName = "EntityMilestone.TimeRemainingInDays"
+    label = "Time Remaining (Days)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number ElapsedTimeInMins {
+    apiName = "EntityMilestone.ElapsedTimeInMins"
+    label = "Elapsed Time (Mins)"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number ElapsedTimeInHrs {
+    apiName = "EntityMilestone.ElapsedTimeInHrs"
+    label = "Elapsed Time (Hours)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number ElapsedTimeInDays {
+    apiName = "EntityMilestone.ElapsedTimeInDays"
+    label = "Elapsed Time (Days)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TimeSinceTargetInMins {
+    apiName = "EntityMilestone.TimeSinceTargetInMins"
+    label = "Time Since Target (Min:Sec)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text TimeSinceTargetInHrs {
+    apiName = "EntityMilestone.TimeSinceTargetInHrs"
+    label = "Time Since Target (Hour:Min)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number TimeSinceTargetInDays {
+    apiName = "EntityMilestone.TimeSinceTargetInDays"
+    label = "Time Since Target (Days)"
+    precision = 6
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup BusinessHoursId {
+    apiName = "EntityMilestone.BusinessHoursId"
+    label = "Business Hours ID"
+    referenceTo = [
+      "BusinessHours",
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "BusinessHours"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MilestoneId {
+    apiName = "EntityMilestone.MilestoneId"
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,12 @@
+salesforce.ListView Scorecard_Cold_Leads_Scorecard {
+  fullName = "Scorecard.Cold_Leads_Scorecard"
+  filterScope = "Queue"
+  label = "Cold Leads"
+  queue = "Cold_Leads"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Scorecard,
+  ]
+}

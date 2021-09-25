@@ -1,0 +1,17 @@
+salesforce.ConnectedApp Salto {
+  fullName = "Salto"
+  contactEmail = "agami.lety@gmail.com"
+  label = "Salto"
+  oauthConfig = {
+    callbackUrl = "http://localhost:1030"
+    consumerKey = "3MVG9DREgiBqN9WnXUd0E_u8LZ05ipkxVwW9gkPgcqEDZfxqOHKTH1wf7o8RE4EAHNG5K1woJtpNAUiM6Z3Q8"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = "Full"
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

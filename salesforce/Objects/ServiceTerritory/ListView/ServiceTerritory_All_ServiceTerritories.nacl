@@ -1,0 +1,8 @@
+salesforce.ListView ServiceTerritory_All_ServiceTerritories {
+  fullName = "ServiceTerritory.All_ServiceTerritories"
+  filterScope = "Everything"
+  label = "All Service Territories"
+  _parent = [
+    salesforce.ServiceTerritory,
+  ]
+}

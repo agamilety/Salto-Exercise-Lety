@@ -1,0 +1,31 @@
+salesforce.ListView ServiceAppointment_MyPendingAppointments {
+  fullName = "ServiceAppointment.MyPendingAppointments"
+  columns = [
+    "Name",
+    "SchedStartTime",
+    "SchedEndTime",
+    "ServiceTerritory",
+    "Status",
+    "WorkTypeName",
+    "WorkType",
+    "AdditionalInformation",
+    "Account",
+    "ParentRecord",
+  ]
+  filterScope = "Mine"
+  filters = [
+    {
+      field = "SchedStartTime"
+      operation = "equals"
+    },
+    {
+      field = "StatusCategory"
+      operation = "equals"
+      value = "0"
+    },
+  ]
+  label = "My Pending Service Appointments"
+  _parent = [
+    salesforce.ServiceAppointment,
+  ]
+}

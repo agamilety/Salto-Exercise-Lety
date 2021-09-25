@@ -1,0 +1,169 @@
+type salesforce.ReturnOrderItemTax {
+  serviceid Id {
+    apiName = "ReturnOrderItemTax.Id"
+    label = "Return Order Item Tax ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ReturnOrderItemTax.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ReturnOrderItemTaxNumber {
+    apiName = "ReturnOrderItemTax.ReturnOrderItemTaxNumber"
+    label = "Return Order Item Tax Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ReturnOrderItemTax.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ReturnOrderItemTax.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ReturnOrderItemTax.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ReturnOrderItemTax.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ReturnOrderItemTax.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ReturnOrderLineItemId {
+    apiName = "ReturnOrderItemTax.ReturnOrderLineItemId"
+    label = "Return Order Line Item ID"
+    _required = true
+    referenceTo = [
+      salesforce.ReturnOrderLineItem,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ReturnOrderLineItem"
+    queryable = true
+  }
+  salesforce.Lookup ReturnOrderId {
+    apiName = "ReturnOrderItemTax.ReturnOrderId"
+    label = "Return Order ID"
+    _required = true
+    referenceTo = [
+      salesforce.ReturnOrder,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ReturnOrder"
+    queryable = true
+  }
+  salesforce.Lookup ReturnOrderItemAdjustmentId {
+    apiName = "ReturnOrderItemTax.ReturnOrderItemAdjustmentId"
+    label = "Return Order Item Adjustment ID"
+    referenceTo = [
+      salesforce.ReturnOrderItemAdjustment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ReturnOrderItemAdjustment"
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "ReturnOrderItemTax.Type"
+    label = "Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Actual"
+        default = false
+        label = "Actual"
+        isActive = true
+      },
+      {
+        fullName = "Estimated"
+        default = false
+        label = "Estimated"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Amount {
+    apiName = "ReturnOrderItemTax.Amount"
+    label = "Amount"
+    _required = true
+    createable = true
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Percent Rate {
+    apiName = "ReturnOrderItemTax.Rate"
+    label = "Rate"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 5
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date TaxEffectiveDate {
+    apiName = "ReturnOrderItemTax.TaxEffectiveDate"
+    label = "Tax Effective Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ReturnOrderItemTax.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 2000
+    queryable = true
+  }
+}

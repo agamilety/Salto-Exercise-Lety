@@ -1,0 +1,8 @@
+salesforce.ListView OperatingHours_All_OperatingHours {
+  fullName = "OperatingHours.All_OperatingHours"
+  filterScope = "Everything"
+  label = "All Operating Hours"
+  _parent = [
+    salesforce.OperatingHours,
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.ListView WorkType_All_WorkTypes {
+  fullName = "WorkType.All_WorkTypes"
+  filterScope = "Everything"
+  label = "All Work Types"
+  _parent = [
+    salesforce.WorkType,
+  ]
+}

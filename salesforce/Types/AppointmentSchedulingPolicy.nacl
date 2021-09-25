@@ -1,0 +1,78 @@
+type salesforce.AppointmentSchedulingPolicy {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string appointmentAssignmentPolicy {
+    foreignKeyDomain = [
+      "AppointmentAssignmentPolicy",
+    ]
+  }
+  string appointmentStartTimeInterval {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "10",
+        "120",
+        "15",
+        "150",
+        "180",
+        "20",
+        "240",
+        "30",
+        "300",
+        "360",
+        "420",
+        "45",
+        "480",
+        "5",
+        "60",
+        "90",
+      ]
+    }
+  }
+  string extCalEventHandler {
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  string masterLabel {
+  }
+  boolean shouldCheckExternalCalendar {
+  }
+  boolean shouldConsiderCalendarEvents {
+  }
+  boolean shouldEnforceExcludedResource {
+  }
+  boolean shouldEnforceRequiredResource {
+  }
+  boolean shouldMatchSkill {
+  }
+  boolean shouldMatchSkillLevel {
+  }
+  boolean shouldRespectVisitingHours {
+  }
+  boolean shouldUsePrimaryMembers {
+  }
+  boolean shouldUseSecondaryMembers {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "policy"
+  dirName = "appointmentSchedulingPolicies"
+  metadataType = "AppointmentSchedulingPolicy"
+}

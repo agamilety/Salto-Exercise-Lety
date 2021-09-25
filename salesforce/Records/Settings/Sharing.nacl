@@ -1,0 +1,16 @@
+salesforce.SharingSettings {
+  fullName = "Sharing"
+  deferGroupMembership = false
+  deferSharingRules = false
+  enableAssetSharing = true
+  enableCommunityUserVisibility = false
+  enableExternalSharingModel = true
+  enableManagerGroups = false
+  enableManualUserRecordSharing = false
+  enablePortalUserCaseSharing = true
+  enablePortalUserVisibility = false
+  enableRemoveTMGroupMembership = false
+  enableRestrictAccessLookupRecords = false
+  enableSecureGuestAccess = false
+  enableStandardReportVisibility = true
+}

@@ -1,0 +1,6 @@
+salesforce.OrgSettings {
+  fullName = "Org"
+  enableMakeDeploymentsMandatory = "true"
+  enableManageSelfServiceUsers = false
+  enableRADeploymentAttributeOnly = "true"
+}

@@ -1,0 +1,141 @@
+salesforce.Layout ReturnOrder_Return_Order_Layout@bss {
+  fullName = "ReturnOrder-Return Order Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrder.field.ReturnOrderNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.CaseId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.AccountId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.ReturnedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Shipping Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.SourceLocationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.ShipmentType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.ExpectedArrivalDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.DestinationLocationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.ShipFromAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrder.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrder.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrder.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ReturnOrder,
+  ]
+}

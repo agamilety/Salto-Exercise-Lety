@@ -1,0 +1,147 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    apiName = "Account.CustomerPriority__c"
+    label = "Customer Priority"
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist SLA__c {
+    apiName = "Account.SLA__c"
+    label = "SLA"
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist Active__c {
+    apiName = "Account.Active__c"
+    label = "Active"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Account.NumberofLocations__c"
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist UpsellOpportunity__c {
+    apiName = "Account.UpsellOpportunity__c"
+    label = "Upsell Opportunity"
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text SLASerialNumber__c {
+    apiName = "Account.SLASerialNumber__c"
+    label = "SLA Serial Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date SLAExpirationDate__c {
+    apiName = "Account.SLAExpirationDate__c"
+    label = "SLA Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+}

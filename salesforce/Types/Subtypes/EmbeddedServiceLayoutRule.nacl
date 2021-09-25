@@ -1,0 +1,31 @@
+type salesforce.EmbeddedServiceLayoutRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string appointmentStatus {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Canceled",
+        "Cannot Complete",
+        "Completed",
+        "Dispatched",
+        "In Progress",
+        "None",
+        "Scheduled",
+      ]
+    }
+  }
+  metadataType = "EmbeddedServiceLayoutRule"
+}

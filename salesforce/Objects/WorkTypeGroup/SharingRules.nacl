@@ -1,0 +1,6 @@
+salesforce.SharingRules WorkTypeGroup {
+  fullName = "WorkTypeGroup"
+  _parent = [
+    salesforce.WorkTypeGroup,
+  ]
+}

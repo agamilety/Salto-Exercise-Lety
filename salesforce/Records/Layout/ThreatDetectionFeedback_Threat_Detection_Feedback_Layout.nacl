@@ -1,0 +1,43 @@
+salesforce.Layout ThreatDetectionFeedback_Threat_Detection_Feedback_Layout@bsss {
+  fullName = "ThreatDetectionFeedback-Threat Detection Feedback Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Feedback Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "ThreatDetectionFeedbackNumber"
+            },
+            {
+              behavior = "Required"
+              field = "ThreatDetectionEventId"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "Response"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+}

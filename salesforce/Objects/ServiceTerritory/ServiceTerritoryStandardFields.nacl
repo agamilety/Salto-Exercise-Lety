@@ -1,0 +1,164 @@
+type salesforce.ServiceTerritory {
+  serviceid Id {
+    apiName = "ServiceTerritory.Id"
+    label = "Territory ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ServiceTerritory.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = "false"
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ServiceTerritory.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "ServiceTerritory.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ServiceTerritory.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ServiceTerritory.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ServiceTerritory.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ServiceTerritory.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ServiceTerritory.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentTerritoryId {
+    apiName = "ServiceTerritory.ParentTerritoryId"
+    label = "Parent Territory ID"
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ParentTerritory"
+    queryable = true
+  }
+  salesforce.Lookup TopLevelTerritoryId {
+    apiName = "ServiceTerritory.TopLevelTerritoryId"
+    label = "Top-Level Territory ID"
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "TopLevelTerritory"
+    queryable = true
+    trackHistory = "false"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ServiceTerritory.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Lookup OperatingHoursId {
+    apiName = "ServiceTerritory.OperatingHoursId"
+    label = "Operating Hour ID"
+    _required = true
+    referenceTo = [
+      salesforce.OperatingHours,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "OperatingHours"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Address Address {
+    apiName = "ServiceTerritory.Address"
+    label = "Address"
+    _required = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "ServiceTerritory.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TypicalInTerritoryTravelTime {
+    apiName = "ServiceTerritory.TypicalInTerritoryTravelTime"
+    label = "Typical In-Territory Travel Time (Minutes)"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+}

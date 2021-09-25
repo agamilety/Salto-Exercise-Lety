@@ -1,0 +1,14 @@
+salesforce.AppointmentSchedulingPolicy default_appointment_scheduling_policy {
+  fullName = "default_appointment_scheduling_policy"
+  appointmentStartTimeInterval = "15"
+  masterLabel = "Default Appointment Scheduling Policy"
+  shouldCheckExternalCalendar = false
+  shouldConsiderCalendarEvents = true
+  shouldEnforceExcludedResource = true
+  shouldEnforceRequiredResource = true
+  shouldMatchSkill = true
+  shouldMatchSkillLevel = true
+  shouldRespectVisitingHours = true
+  shouldUsePrimaryMembers = true
+  shouldUseSecondaryMembers = true
+}

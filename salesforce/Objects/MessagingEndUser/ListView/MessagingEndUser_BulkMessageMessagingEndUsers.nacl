@@ -1,0 +1,29 @@
+salesforce.ListView MessagingEndUser_BulkMessageMessagingEndUsers {
+  fullName = "MessagingEndUser.BulkMessageMessagingEndUsers"
+  columns = [
+    "Name",
+    "Account",
+    "MessagingPlatformKey",
+    "CONTACT.LAST_ACTIVITY",
+    "MessagingChannel",
+    "MessageType",
+    "IsFullyOptedIn",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "MessageType"
+      operation = "equals"
+      value = "0"
+    },
+    {
+      field = "IsFullyOptedIn"
+      operation = "equals"
+      value = "1"
+    },
+  ]
+  label = "Bulk_SMS_Messaging_End_Users"
+  _parent = [
+    salesforce.MessagingEndUser,
+  ]
+}

@@ -1,0 +1,285 @@
+salesforce.Layout ServiceAppointment_Service_Appointment_Layout@bss {
+  fullName = "ServiceAppointment-Service Appointment Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "General Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.AppointmentNumber
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ContactId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceAppointment.field.ParentRecordId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Duration
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.DurationType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.WorkTypeId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.AdditionalInformation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Comments
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceAppointment.field.EarliestStartTime
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceAppointment.field.DueDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.ParentRecordType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Address
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceAppointment.field.Status
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.StatusCategory
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.AppointmentType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.CancellationReason
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Scheduled Times"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ArrivalWindowStartTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ArrivalWindowEndTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.SchedStartTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.SchedEndTime
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Actual Times"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ActualStartTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ActualEndTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.ActualDuration
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Contact Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Phone
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.Email
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceAppointment.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceAppointment.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "Flow._ModifyAppointment"
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "CreatedDate",
+        "StepStatus",
+        "OriginalActor",
+        "Actor",
+        "Comments",
+      ]
+      relatedList = "RelatedProcessHistoryList"
+    },
+    {
+      fields = [
+        "ServiceResource",
+        "Event",
+      ]
+      relatedList = "AssignedResources"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ServiceAppointment,
+  ]
+}

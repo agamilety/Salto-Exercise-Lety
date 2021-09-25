@@ -1,0 +1,6 @@
+salesforce.ApexClass Leads {
+  apiVersion = 52
+  status = "Active"
+  fullName = "Leads"
+  content = file("salesforce/Records/ApexClass/Leads.cls")
+}

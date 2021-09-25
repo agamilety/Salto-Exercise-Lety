@@ -1,0 +1,6 @@
+salesforce.SharingRules ReturnOrder {
+  fullName = "ReturnOrder"
+  _parent = [
+    salesforce.ReturnOrder,
+  ]
+}

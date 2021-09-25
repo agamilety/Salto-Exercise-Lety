@@ -1,0 +1,6 @@
+salesforce.SharingRules ServiceAppointment {
+  fullName = "ServiceAppointment"
+  _parent = [
+    salesforce.ServiceAppointment,
+  ]
+}

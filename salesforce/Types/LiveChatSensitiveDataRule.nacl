@@ -1,0 +1,46 @@
+type salesforce.LiveChatSensitiveDataRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string actionType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Remove",
+        "Replace",
+      ]
+    }
+  }
+  string description {
+  }
+  number enforceOn {
+  }
+  boolean isEnabled {
+  }
+  string pattern {
+  }
+  number priority {
+  }
+  string replacement {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "liveChatSensitiveDataRule"
+  dirName = "liveChatSensitiveDataRule"
+  metadataType = "LiveChatSensitiveDataRule"
+}

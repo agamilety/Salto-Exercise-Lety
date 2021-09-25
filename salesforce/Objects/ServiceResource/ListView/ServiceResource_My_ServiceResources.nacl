@@ -1,0 +1,8 @@
+salesforce.ListView ServiceResource_My_ServiceResources {
+  fullName = "ServiceResource.My_ServiceResources"
+  filterScope = "Mine"
+  label = "My Service Resources"
+  _parent = [
+    salesforce.ServiceResource,
+  ]
+}

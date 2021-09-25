@@ -1,0 +1,138 @@
+salesforce.Layout WorkType_Work_Type_Layout@bss {
+  fullName = "WorkType-Work Type Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.WorkType.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.OperatingHoursId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.WorkType.field.EstimatedDuration
+            },
+            {
+              behavior = "Required"
+              field = salesforce.WorkType.field.DurationType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.BlockTimeBeforeAppointment
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.BlockTimeBeforeUnit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.BlockTimeAfterAppointment
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.BlockTimeAfterUnit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.TimeframeStart
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.TimeFrameStartUnit
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.TimeframeEnd
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.TimeFrameEndUnit
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkType.field.CreatedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.WorkType.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.WorkType.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "Skill",
+        "SkillLevel",
+      ]
+      relatedList = "SkillRequirements"
+    },
+    {
+      fields = [
+        "Name",
+        "ServiceTerritory",
+      ]
+      relatedList = "ServiceTerritoryWorkType"
+    },
+    {
+      fields = [
+        "Name",
+        "WorkTypeGroup",
+      ]
+      relatedList = "WorkTypeGroupMember"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.WorkType,
+  ]
+}

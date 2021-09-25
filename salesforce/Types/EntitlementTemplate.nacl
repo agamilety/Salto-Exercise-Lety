@@ -1,0 +1,47 @@
+type salesforce.EntitlementTemplate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string businessHours {
+    foreignKeyDomain = [
+      salesforce.BusinessHoursEntry,
+    ]
+  }
+  number casesPerEntitlement {
+  }
+  string entitlementProcess {
+  }
+  serviceid fullName {
+  }
+  boolean isPerIncident {
+  }
+  number term {
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Phone Support",
+        "Web Support",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "entitlementTemplate"
+  dirName = "entitlementTemplates"
+  metadataType = "EntitlementTemplate"
+}

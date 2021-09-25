@@ -1,0 +1,12 @@
+salesforce.ListView ServiceTerritory_Cold_Leads_ServiceTerritory {
+  fullName = "ServiceTerritory.Cold_Leads_ServiceTerritory"
+  filterScope = "Queue"
+  label = "Cold Leads"
+  queue = "Cold_Leads"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.ServiceTerritory,
+  ]
+}

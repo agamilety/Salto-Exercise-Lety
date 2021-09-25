@@ -1,0 +1,8 @@
+salesforce.ListView PaymentAuthAdjustment_PaymentAuthAdjustment {
+  fullName = "PaymentAuthAdjustment.PaymentAuthAdjustment"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.PaymentAuthAdjustment,
+  ]
+}

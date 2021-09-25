@@ -1,0 +1,8 @@
+salesforce.IndustriesSettings {
+  fullName = "Industries"
+  enableAccountScoreEnabled = "false"
+  enableEventManagementOrgPref = false
+  enableEventWriteOrgPref = "false"
+  enableMultiResourceOrgPref = false
+  enableOverbookingOrgPref = false
+}

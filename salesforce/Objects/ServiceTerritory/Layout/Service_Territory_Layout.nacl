@@ -1,0 +1,118 @@
+salesforce.Layout ServiceTerritory_Service_Territory_Layout@bss {
+  fullName = "ServiceTerritory-Service Territory Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ServiceTerritory.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceTerritory.field.ParentTerritoryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceTerritory.field.OperatingHoursId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceTerritory.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceTerritory.field.Address
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceTerritory.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceTerritory.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceTerritory.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceTerritory.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ServiceResource",
+        "TerritoryType",
+        "EffectiveStartDate",
+        "EffectiveEndDate",
+      ]
+      relatedList = "ServiceTerritoryMembers"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "Name",
+        "ParentTerritory",
+        "OperatingHours",
+        "IsActive",
+      ]
+      relatedList = "ChildServiceTerritories"
+    },
+    {
+      fields = [
+        "Name",
+        "WorkType",
+      ]
+      relatedList = "ServiceTerritoryWorkType"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ServiceTerritory,
+  ]
+}

@@ -1,0 +1,10 @@
+envs {
+  envs = [
+    {
+      name = "salesforce"
+      services = [
+        "salesforce",
+      ]
+    },
+  ]
+}

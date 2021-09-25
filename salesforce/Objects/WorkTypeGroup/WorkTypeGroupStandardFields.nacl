@@ -1,0 +1,139 @@
+type salesforce.WorkTypeGroup {
+  serviceid Id {
+    apiName = "WorkTypeGroup.Id"
+    label = "Work Type Group ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WorkTypeGroup.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = "false"
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkTypeGroup.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "WorkTypeGroup.Name"
+    label = "Work Type Group Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkTypeGroup.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkTypeGroup.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkTypeGroup.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkTypeGroup.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkTypeGroup.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "WorkTypeGroup.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist GroupType {
+    apiName = "WorkTypeGroup.GroupType"
+    label = "Group Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Default"
+        default = true
+        label = "Default"
+        isActive = true
+      },
+      {
+        fullName = "Capacity"
+        default = false
+        label = "Capacity"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "WorkTypeGroup.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MultiselectPicklist AdditionalInformation {
+    apiName = "WorkTypeGroup.AdditionalInformation"
+    label = "Additional Information"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+  }
+}

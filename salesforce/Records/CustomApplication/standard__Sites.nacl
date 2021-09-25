@@ -1,0 +1,9 @@
+salesforce.CustomApplication standard__Sites {
+  fullName = "standard__Sites"
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  tabs = [
+    "standard-Chatter",
+  ]
+}

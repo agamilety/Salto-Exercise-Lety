@@ -1,0 +1,101 @@
+type salesforce.WorkTypeGroupMember {
+  serviceid Id {
+    apiName = "WorkTypeGroupMember.Id"
+    label = "Work Type Group Member ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkTypeGroupMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WorkTypeGroupMember.Name"
+    label = "Work Type Group Member Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkTypeGroupMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkTypeGroupMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkTypeGroupMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkTypeGroupMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkTypeGroupMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "WorkTypeGroupMember.WorkTypeId"
+    label = "Work Type ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup WorkTypeGroupId {
+    apiName = "WorkTypeGroupMember.WorkTypeGroupId"
+    label = "Work Type Group ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkTypeGroup,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "WorkTypeGroup"
+    queryable = true
+    trackHistory = "false"
+  }
+}

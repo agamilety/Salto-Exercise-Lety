@@ -1,0 +1,12 @@
+salesforce.ListView ServiceResource_Hot_Leads_ServiceResource {
+  fullName = "ServiceResource.Hot_Leads_ServiceResource"
+  filterScope = "Queue"
+  label = "Hot Leads"
+  queue = "Hot_Leads"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.ServiceResource,
+  ]
+}

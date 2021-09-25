@@ -1,0 +1,14 @@
+salesforce.ListView Contact_BulkMessageContacts {
+  fullName = "Contact.BulkMessageContacts"
+  columns = [
+    "FULL_NAME",
+    "ACCOUNT.NAME",
+    "CONTACT.PHONE3",
+    "CONTACT.LAST_ACTIVITY",
+  ]
+  filterScope = "Everything"
+  label = "Bulk_SMS_Contacts"
+  _parent = [
+    salesforce.Contact,
+  ]
+}

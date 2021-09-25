@@ -1,0 +1,436 @@
+type salesforce.WorkOrderLineItem {
+  serviceid Id {
+    apiName = "WorkOrderLineItem.Id"
+    label = "Line Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkOrderLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber LineItemNumber {
+    apiName = "WorkOrderLineItem.LineItemNumber"
+    label = "Work Order Line Item Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkOrderLineItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkOrderLineItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkOrderLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkOrderLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkOrderLineItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkOrderId {
+    apiName = "WorkOrderLineItem.WorkOrderId"
+    label = "Work Order ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkOrder,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "WorkOrder"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup ParentWorkOrderLineItemId {
+    apiName = "WorkOrderLineItem.ParentWorkOrderLineItemId"
+    label = "Parent Work Order Line Item ID"
+    referenceTo = [
+      salesforce.WorkOrderLineItem,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ParentWorkOrderLineItem"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "WorkOrderLineItem.Product2Id"
+    label = "Product ID"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product2"
+    queryable = true
+  }
+  salesforce.Lookup AssetId {
+    apiName = "WorkOrderLineItem.AssetId"
+    label = "Asset ID"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Asset"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup OrderId {
+    apiName = "WorkOrderLineItem.OrderId"
+    label = "Order ID"
+    referenceTo = [
+      salesforce.Order,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Order"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup RootWorkOrderLineItemId {
+    apiName = "WorkOrderLineItem.RootWorkOrderLineItemId"
+    label = "Root Work Order Line Item ID"
+    referenceTo = [
+      salesforce.WorkOrderLineItem,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "RootWorkOrderLineItem"
+    queryable = true
+    trackHistory = "false"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "WorkOrderLineItem.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.DateTime StartDate {
+    apiName = "WorkOrderLineItem.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EndDate {
+    apiName = "WorkOrderLineItem.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "WorkOrderLineItem.Status"
+    label = "Status"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+    valueSetName = salesforce.StandardValueSet.instance.WorkOrderStatus
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "WorkOrderLineItem.PricebookEntryId"
+    label = "Product ID"
+    referenceTo = [
+      salesforce.PricebookEntry,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "PricebookEntry"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Number Quantity {
+    apiName = "WorkOrderLineItem.Quantity"
+    label = "Quantity"
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Currency UnitPrice {
+    apiName = "WorkOrderLineItem.UnitPrice"
+    label = "Unit Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Percent Discount {
+    apiName = "WorkOrderLineItem.Discount"
+    label = "Discount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Currency ListPrice {
+    apiName = "WorkOrderLineItem.ListPrice"
+    label = "List Price"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency Subtotal {
+    apiName = "WorkOrderLineItem.Subtotal"
+    label = "Subtotal"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "WorkOrderLineItem.TotalPrice"
+    label = "Total Price"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Duration {
+    apiName = "WorkOrderLineItem.Duration"
+    label = "Duration"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist DurationType {
+    apiName = "WorkOrderLineItem.DurationType"
+    label = "Duration Type"
+    valueSet = [
+      {
+        fullName = "Hours"
+        default = true
+        label = "Hours"
+        isActive = true
+      },
+      {
+        fullName = "Minutes"
+        default = false
+        label = "Minutes"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number DurationInMinutes {
+    apiName = "WorkOrderLineItem.DurationInMinutes"
+    label = "Duration in Minutes"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "WorkOrderLineItem.WorkTypeId"
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Address Address {
+    apiName = "WorkOrderLineItem.Address"
+    label = "Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "WorkOrderLineItem.ServiceTerritoryId"
+    label = "Territory ID"
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceTerritory"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Text Subject {
+    apiName = "WorkOrderLineItem.Subject"
+    label = "Subject"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Picklist StatusCategory {
+    apiName = "WorkOrderLineItem.StatusCategory"
+    label = "Status Category"
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "InProgress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "OnHold"
+        default = false
+        label = "On Hold"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "None"
+        default = true
+        label = "None"
+        isActive = true
+      },
+      {
+        fullName = "CannotComplete"
+        default = false
+        label = "Cannot Complete"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "WorkOrderLineItem.IsClosed"
+    label = "Is Closed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Priority {
+    apiName = "WorkOrderLineItem.Priority"
+    label = "Priority"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+    valueSetName = salesforce.StandardValueSet.instance.WorkOrderPriority
+  }
+  salesforce.Number ServiceAppointmentCount {
+    apiName = "WorkOrderLineItem.ServiceAppointmentCount"
+    label = "Service Appointment Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LocationId {
+    apiName = "WorkOrderLineItem.LocationId"
+    label = "Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Location"
+    queryable = true
+    trackHistory = "false"
+  }
+}

@@ -1,0 +1,173 @@
+type salesforce.ServiceTerritoryMember {
+  serviceid Id {
+    apiName = "ServiceTerritoryMember.Id"
+    label = "Resource Territory ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ServiceTerritoryMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber MemberNumber {
+    apiName = "ServiceTerritoryMember.MemberNumber"
+    label = "Member Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ServiceTerritoryMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ServiceTerritoryMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ServiceTerritoryMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ServiceTerritoryMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ServiceTerritoryMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "ServiceTerritoryMember.ServiceTerritoryId"
+    label = "Territory ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ServiceTerritory"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup ServiceResourceId {
+    apiName = "ServiceTerritoryMember.ServiceResourceId"
+    label = "Resource ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceResource,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceResource"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Picklist TerritoryType {
+    apiName = "ServiceTerritoryMember.TerritoryType"
+    label = "Territory Type"
+    valueSet = [
+      {
+        fullName = "P"
+        default = true
+        label = "Primary"
+        isActive = true
+      },
+      {
+        fullName = "S"
+        default = false
+        label = "Secondary"
+        isActive = true
+      },
+      {
+        fullName = "R"
+        default = false
+        label = "Relocation"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveStartDate {
+    apiName = "ServiceTerritoryMember.EffectiveStartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EffectiveEndDate {
+    apiName = "ServiceTerritoryMember.EffectiveEndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Address Address {
+    apiName = "ServiceTerritoryMember.Address"
+    label = "Address"
+    _required = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OperatingHoursId {
+    apiName = "ServiceTerritoryMember.OperatingHoursId"
+    label = "Operating Hour ID"
+    referenceTo = [
+      salesforce.OperatingHours,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "OperatingHours"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Picklist Role {
+    apiName = "ServiceTerritoryMember.Role"
+    label = "Role"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+  }
+}

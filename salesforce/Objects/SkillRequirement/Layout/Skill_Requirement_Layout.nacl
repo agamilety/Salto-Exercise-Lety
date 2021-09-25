@@ -1,0 +1,73 @@
+salesforce.Layout SkillRequirement_Skill_Requirement_Layout@bss {
+  fullName = "SkillRequirement-Skill Requirement Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SkillRequirement.field.SkillNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SkillRequirement.field.RelatedRecordId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SkillRequirement.field.SkillId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SkillRequirement.field.SkillLevel
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SkillRequirement.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SkillRequirement.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.SkillRequirement,
+  ]
+}

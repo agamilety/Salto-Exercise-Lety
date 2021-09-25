@@ -1,0 +1,133 @@
+salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
+  fullName = "ApiAnomalyEventStore-API Anomaly Event Store Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Event Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ApiAnomalyEventStore.field.ApiAnomalyEventNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ApiAnomalyEventStore.field.EventIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.Summary
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ApiAnomalyEventStore.field.EventDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.Score
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Event Data"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.Operation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.RequestIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.Uri
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.SecurityEventData
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.QueriedEntities
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.RowsProcessed
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.UserAgent
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.UserId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ApiAnomalyEventStore.field.SourceIp
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Response",
+      ]
+      relatedList = "RelatedFeedback"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ApiAnomalyEventStore,
+  ]
+}

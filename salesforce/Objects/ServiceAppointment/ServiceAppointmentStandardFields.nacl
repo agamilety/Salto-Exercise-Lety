@@ -1,0 +1,555 @@
+type salesforce.ServiceAppointment {
+  serviceid Id {
+    apiName = "ServiceAppointment.Id"
+    label = "Service Appointment ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ServiceAppointment.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = "false"
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ServiceAppointment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber AppointmentNumber {
+    apiName = "ServiceAppointment.AppointmentNumber"
+    label = "Appointment Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ServiceAppointment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ServiceAppointment.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ServiceAppointment.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ServiceAppointment.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ServiceAppointment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentRecordId {
+    apiName = "ServiceAppointment.ParentRecordId"
+    label = "Parent Record ID"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Asset,
+      salesforce.Lead,
+      salesforce.Opportunity,
+      salesforce.WorkOrder,
+      salesforce.WorkOrderLineItem,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ParentRecord"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Text ParentRecordType {
+    apiName = "ServiceAppointment.ParentRecordType"
+    label = "Parent Record Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "ServiceAppointment.AccountId"
+    label = "Account ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Account"
+    queryable = true
+    trackHistory = "false"
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "ServiceAppointment.WorkTypeId"
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Lookup ContactId {
+    apiName = "ServiceAppointment.ContactId"
+    label = "Contact ID"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Contact"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Address Address {
+    apiName = "ServiceAppointment.Address"
+    label = "Address"
+    _required = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ServiceAppointment.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.DateTime EarliestStartTime {
+    apiName = "ServiceAppointment.EarliestStartTime"
+    label = "Earliest Start Permitted"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime DueDate {
+    apiName = "ServiceAppointment.DueDate"
+    label = "Due Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Duration {
+    apiName = "ServiceAppointment.Duration"
+    label = "Duration"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.DateTime ArrivalWindowStartTime {
+    apiName = "ServiceAppointment.ArrivalWindowStartTime"
+    label = "Arrival Window Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ArrivalWindowEndTime {
+    apiName = "ServiceAppointment.ArrivalWindowEndTime"
+    label = "Arrival Window End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ServiceAppointment.Status"
+    label = "Status"
+    valueSet = [
+      {
+        fullName = "None"
+        default = true
+        label = "None"
+        isActive = true
+      },
+      {
+        fullName = "Scheduled"
+        default = false
+        label = "Scheduled"
+        isActive = true
+      },
+      {
+        fullName = "Dispatched"
+        default = false
+        label = "Dispatched"
+        isActive = true
+      },
+      {
+        fullName = "In Progress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "Cannot Complete"
+        default = false
+        label = "Cannot Complete"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.DateTime SchedStartTime {
+    apiName = "ServiceAppointment.SchedStartTime"
+    label = "Scheduled Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime SchedEndTime {
+    apiName = "ServiceAppointment.SchedEndTime"
+    label = "Scheduled End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ActualStartTime {
+    apiName = "ServiceAppointment.ActualStartTime"
+    label = "Actual Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime ActualEndTime {
+    apiName = "ServiceAppointment.ActualEndTime"
+    label = "Actual End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number ActualDuration {
+    apiName = "ServiceAppointment.ActualDuration"
+    label = "Actual Duration (Minutes)"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist DurationType {
+    apiName = "ServiceAppointment.DurationType"
+    label = "Duration Type"
+    valueSet = [
+      {
+        fullName = "Hours"
+        default = true
+        label = "Hours"
+        isActive = true
+      },
+      {
+        fullName = "Minutes"
+        default = false
+        label = "Minutes"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number DurationInMinutes {
+    apiName = "ServiceAppointment.DurationInMinutes"
+    label = "Duration in Minutes"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "ServiceAppointment.ServiceTerritoryId"
+    label = "Territory ID"
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceTerritory"
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Text Subject {
+    apiName = "ServiceAppointment.Subject"
+    label = "Subject"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Picklist ParentRecordStatusCategory {
+    apiName = "ServiceAppointment.ParentRecordStatusCategory"
+    label = "Parent Record Status Category"
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "InProgress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "OnHold"
+        default = false
+        label = "On Hold"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "None"
+        default = true
+        label = "None"
+        isActive = true
+      },
+      {
+        fullName = "CannotComplete"
+        default = false
+        label = "Cannot Complete"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist StatusCategory {
+    apiName = "ServiceAppointment.StatusCategory"
+    label = "Status Category"
+    valueSet = [
+      {
+        fullName = "None"
+        default = true
+        label = "None"
+        isActive = true
+      },
+      {
+        fullName = "Scheduled"
+        default = false
+        label = "Scheduled"
+        isActive = true
+      },
+      {
+        fullName = "Dispatched"
+        default = false
+        label = "Dispatched"
+        isActive = true
+      },
+      {
+        fullName = "InProgress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "CannotComplete"
+        default = false
+        label = "Cannot Complete"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled "
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea ServiceNote {
+    apiName = "ServiceAppointment.ServiceNote"
+    label = "Service Note"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist AppointmentType {
+    apiName = "ServiceAppointment.AppointmentType"
+    label = "Appointment Type"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = "false"
+  }
+  salesforce.Email Email {
+    apiName = "ServiceAppointment.Email"
+    label = "Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Phone Phone {
+    apiName = "ServiceAppointment.Phone"
+    label = "Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CancellationReason {
+    apiName = "ServiceAppointment.CancellationReason"
+    label = "Cancellation Reason"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Text AdditionalInformation {
+    apiName = "ServiceAppointment.AdditionalInformation"
+    label = "Additional Information"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Text Comments {
+    apiName = "ServiceAppointment.Comments"
+    label = "Comment"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Checkbox IsAnonymousBooking {
+    apiName = "ServiceAppointment.IsAnonymousBooking"
+    label = "Anonymous Booking"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown ApptBookingInfoUrl {
+    apiName = "ServiceAppointment.ApptBookingInfoUrl"
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Unknown IsOffsiteAppointment {
+    apiName = "ServiceAppointment.IsOffsiteAppointment"
+    inlineHelpText = "Any type of work that can be done remotely."
+    trackHistory = "false"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

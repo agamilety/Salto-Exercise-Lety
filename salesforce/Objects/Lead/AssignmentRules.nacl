@@ -1,0 +1,36 @@
+salesforce.AssignmentRules Lead {
+  assignmentRule = [
+    {
+      fullName = "Hot%2FCold Leads"
+      active = true
+      ruleEntry = [
+        {
+          assignedTo = "Cold_Leads"
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.Score__c
+              operation = "lessThan"
+              value = "10"
+            },
+          ]
+        },
+        {
+          assignedTo = "Hot_Leads"
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.Score__c
+              operation = "greaterOrEqual"
+              value = "10"
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  fullName = "Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+}

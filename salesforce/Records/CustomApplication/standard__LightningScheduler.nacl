@@ -1,0 +1,20 @@
+salesforce.CustomApplication standard__LightningScheduler {
+  fullName = "standard__LightningScheduler"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Salesforce Scheduler Setup"
+  navType = "Standard"
+  tabs = [
+    "standard-LightningSchedulerSetupAssistant",
+    "standard-ServiceTerritory",
+    "standard-ServiceResource",
+    "standard-WorkTypeGroup",
+    "standard-WorkType",
+    "standard-OperatingHours",
+    "standard-ServiceAppointment",
+  ]
+  uiType = "Lightning"
+}

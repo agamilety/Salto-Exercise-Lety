@@ -1,0 +1,88 @@
+salesforce.Layout TimeSlot_Time_Slot_Layout@bss {
+  fullName = "TimeSlot-Time Slot Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.TimeSlot.field.DayOfWeek
+            },
+            {
+              behavior = "Required"
+              field = salesforce.TimeSlot.field.StartTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TimeSlot.field.MaxAppointments
+            },
+            {
+              behavior = "Required"
+              field = salesforce.TimeSlot.field.OperatingHoursId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.TimeSlot.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.TimeSlot.field.EndTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TimeSlot.field.WorkTypeGroupId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.TimeSlot.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.TimeSlot.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.TimeSlot,
+  ]
+}

@@ -1,0 +1,160 @@
+salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
+  fullName = "CardPaymentMethod-Card Payment Method Layout"
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Card Payment Method"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.NickName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.InputCardNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardHolderName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.ExpiryMonth
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardBin
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.StartMonth
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardHolderFirstName
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardCategory
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.CardPaymentMethod.field.DisplayCardNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.AutoCardType
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CardPaymentMethod.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.ExpiryYear
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardLastFour
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.StartYear
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CardHolderLastName
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "GatewayDetails"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.PaymentGatewayId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.GatewayToken
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "AdditionalInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.CompanyName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.PaymentMethodAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.Email
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CardPaymentMethod.field.Comments
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.CardPaymentMethod,
+  ]
+}

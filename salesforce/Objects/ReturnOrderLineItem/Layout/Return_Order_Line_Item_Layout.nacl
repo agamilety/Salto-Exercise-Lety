@@ -1,0 +1,137 @@
+salesforce.Layout ReturnOrderLineItem_Return_Order_Line_Item_Layout@bssss {
+  fullName = "ReturnOrderLineItem-Return Order Line Item Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrderLineItem.field.ReturnOrderLineItemNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.AssetId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderLineItem.field.QuantityReturned
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.QuantityUnitOfMeasure
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ReturnOrderLineItem.field.ReturnOrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.ReasonForReturn
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.ProcessingPlan
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.RepaymentMethod
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Shipping Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.SourceLocationId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.DestinationLocationId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ReturnOrderLineItem.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrderLineItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ReturnOrderLineItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ReturnOrderLineItem,
+  ]
+}

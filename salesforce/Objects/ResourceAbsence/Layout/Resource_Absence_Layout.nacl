@@ -1,0 +1,110 @@
+salesforce.Layout ResourceAbsence_Resource_Absence_Layout@bss {
+  fullName = "ResourceAbsence-Resource Absence Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ResourceAbsence.field.AbsenceNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ResourceAbsence.field.ResourceId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ResourceAbsence.field.Start
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ResourceAbsence.field.End
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResourceAbsence.field.Address
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ResourceAbsence.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ResourceAbsence.field.Type
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ResourceAbsence.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ResourceAbsence.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Type",
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "CreatedDate",
+        "StepStatus",
+        "OriginalActor",
+        "Actor",
+        "Comments",
+      ]
+      relatedList = "RelatedProcessHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ResourceAbsence,
+  ]
+}

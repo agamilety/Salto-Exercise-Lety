@@ -1,0 +1,23 @@
+salesforce.Queue Hot_Leads {
+  fullName = "Hot_Leads"
+  doesSendEmailToMembers = false
+  email = "agami.lety@gmail.com"
+  name = "Hot Leads"
+  queueSobject = [
+    {
+      sobjectType = "Lead"
+    },
+    {
+      sobjectType = "Location"
+    },
+    {
+      sobjectType = "Scorecard"
+    },
+    {
+      sobjectType = "ServiceResource"
+    },
+    {
+      sobjectType = "ServiceTerritory"
+    },
+  ]
+}

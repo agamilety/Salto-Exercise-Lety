@@ -1,0 +1,63 @@
+type salesforce.EntitlementProcess {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string SObjectType {
+  }
+  boolean active {
+  }
+  string businessHours {
+    foreignKeyDomain = [
+      salesforce.BusinessHoursEntry,
+    ]
+  }
+  string description {
+  }
+  string entryStartDateField {
+  }
+  string exitCriteriaBooleanFilter {
+  }
+  salesforce.FilterItem exitCriteriaFilterItems {
+  }
+  string exitCriteriaFormula {
+  }
+  serviceid fullName {
+  }
+  boolean isRecordTypeApplied {
+  }
+  boolean isVersionDefault {
+  }
+  string name {
+  }
+  string recordType {
+    foreignKeyDomain = [
+      salesforce.RecordType,
+    ]
+  }
+  string versionMaster {
+  }
+  string versionNotes {
+  }
+  number versionNumber {
+  }
+  "List<salesforce.EntitlementProcessMilestoneItem>" milestones {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "entitlementProcess"
+  dirName = "entitlementProcesses"
+  metadataType = "EntitlementProcess"
+}

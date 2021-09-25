@@ -1,0 +1,28 @@
+salesforce.Queue Cold_Leads {
+  fullName = "Cold_Leads"
+  doesSendEmailToMembers = false
+  email = "agami.lety@gmail.com"
+  name = "Cold Leads"
+  queueMembers = {
+    users = {
+      user = "agami.lety@gmail.com"
+    }
+  }
+  queueSobject = [
+    {
+      sobjectType = "Lead"
+    },
+    {
+      sobjectType = "Location"
+    },
+    {
+      sobjectType = "Scorecard"
+    },
+    {
+      sobjectType = "ServiceResource"
+    },
+    {
+      sobjectType = "ServiceTerritory"
+    },
+  ]
+}

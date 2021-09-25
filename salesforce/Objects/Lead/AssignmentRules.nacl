@@ -1,7 +1,7 @@
 salesforce.AssignmentRules Lead {
   assignmentRule = [
     {
-      fullName = "Hot%2FCold Leads"
+      fullName = "Hot%2FCold Leads Assignment"
       active = true
       ruleEntry = [
         {
@@ -10,8 +10,8 @@ salesforce.AssignmentRules Lead {
           criteriaItems = [
             {
               field = salesforce.Lead.field.Score__c
-              operation = "lessThan"
-              value = "10"
+              operation = "lessOrEqual"
+              value = "9"
             },
           ]
         },
@@ -21,8 +21,8 @@ salesforce.AssignmentRules Lead {
           criteriaItems = [
             {
               field = salesforce.Lead.field.Score__c
-              operation = "greaterOrEqual"
-              value = "10"
+              operation = "greaterThan"
+              value = "9"
             },
           ]
         },

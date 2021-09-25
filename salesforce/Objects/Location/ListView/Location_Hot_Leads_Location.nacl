@@ -1,7 +1,7 @@
 salesforce.ListView Location_Hot_Leads_Location {
   fullName = "Location.Hot_Leads_Location"
   filterScope = "Queue"
-  label = "Hot Leads"
+  label = "All Hot Leads"
   queue = "Hot_Leads"
   sharedTo = {
     allInternalUsers = ""

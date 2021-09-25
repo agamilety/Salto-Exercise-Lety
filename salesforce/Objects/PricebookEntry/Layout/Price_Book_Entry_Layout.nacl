@@ -19,15 +19,15 @@ salesforce.Layout PricebookEntry_Price_Book_Entry_Layout@bsss {
             },
             {
               behavior = "Required"
-              field = salesforce.PricebookEntry.field.UnitPrice
+              field = "UnitPrice"
             },
             {
               behavior = "Edit"
-              field = salesforce.PricebookEntry.field.UseStandardPrice
+              field = "UseStandardPrice"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PricebookEntry.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -35,19 +35,19 @@ salesforce.Layout PricebookEntry_Price_Book_Entry_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.PricebookEntry.field.IsActive
+              field = "IsActive"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PricebookEntry.field.ProductCode
+              field = "ProductCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.PricebookEntry.field.StandardPrice
+              field = "StandardPrice"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PricebookEntry.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },

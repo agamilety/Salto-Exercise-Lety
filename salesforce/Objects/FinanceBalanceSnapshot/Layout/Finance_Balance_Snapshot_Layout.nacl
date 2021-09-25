@@ -39,11 +39,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.OriginalReferenceEntityType
+              field = "OriginalReferenceEntityType"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.OriginalEventType
+              field = "OriginalEventType"
             },
           ]
         },
@@ -60,19 +60,19 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.TotalAmountWithTax
+              field = "TotalAmountWithTax"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.ChargeAmount
+              field = "ChargeAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.Subtotal
+              field = "Subtotal"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.ImpactAmount
+              field = "ImpactAmount"
             },
           ]
         },
@@ -80,15 +80,15 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.Balance
+              field = "Balance"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.AdjustmentAmount
+              field = "AdjustmentAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.TaxAmount
+              field = "TaxAmount"
             },
           ]
         },
@@ -105,11 +105,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.FinanceBalanceSnapshot.field.TransactionDate
+              field = "TransactionDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.DueDate
+              field = "DueDate"
             },
           ]
         },
@@ -117,7 +117,7 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.FinanceBalanceSnapshot.field.EffectiveDate
+              field = "EffectiveDate"
             },
           ]
         },
@@ -134,11 +134,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.FinanceSystemName
+              field = "FinanceSystemName"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.FinanceSystemIntegrationMode
+              field = "FinanceSystemIntegrationMode"
             },
           ]
         },
@@ -146,11 +146,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.FinanceSystemTransactionNumber
+              field = "FinanceSystemTransactionNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceBalanceSnapshot.field.FinanceSystemIntegrationStatus
+              field = "FinanceSystemIntegrationStatus"
             },
           ]
         },
@@ -167,11 +167,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.CreatedDate
+              field = "CreatedDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -179,11 +179,11 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceBalanceSnapshot.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

@@ -11,7 +11,7 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.LineItemNumber
+              field = "LineItemNumber"
             },
             {
               behavior = "Readonly"
@@ -23,7 +23,7 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.ContractLineItem.field.Description
+              field = "Description"
             },
           ]
         },
@@ -31,15 +31,15 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.StatusIndicator
+              field = "StatusIndicator"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContractLineItem.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContractLineItem.field.EndDate
+              field = "EndDate"
             },
           ]
         },
@@ -56,15 +56,15 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.ListPrice
+              field = "ListPrice"
             },
             {
               behavior = "Required"
-              field = salesforce.ContractLineItem.field.UnitPrice
+              field = "UnitPrice"
             },
             {
               behavior = "Required"
-              field = salesforce.ContractLineItem.field.Quantity
+              field = "Quantity"
             },
           ]
         },
@@ -72,15 +72,15 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.Subtotal
+              field = "Subtotal"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContractLineItem.field.Discount
+              field = "Discount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.TotalPrice
+              field = "TotalPrice"
             },
           ]
         },
@@ -114,7 +114,7 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -122,7 +122,7 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ContractLineItem.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

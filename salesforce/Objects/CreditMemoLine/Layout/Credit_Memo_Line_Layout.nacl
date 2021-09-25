@@ -15,15 +15,15 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
             },
             {
               behavior = "Required"
-              field = salesforce.CreditMemoLine.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Edit"
@@ -31,7 +31,7 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ReferenceEntityItemType
+              field = "ReferenceEntityItemType"
             },
           ]
         },
@@ -39,15 +39,15 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.Description
+              field = "Description"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ReferenceEntityItemTypeCode
+              field = "ReferenceEntityItemTypeCode"
             },
             {
               behavior = "Required"
-              field = salesforce.CreditMemoLine.field.Type
+              field = "Type"
             },
           ]
         },
@@ -68,15 +68,15 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ChargeAmount
+              field = "ChargeAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.AdjustmentAmount
+              field = "AdjustmentAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.TaxAmount
+              field = "TaxAmount"
             },
           ]
         },
@@ -93,11 +93,11 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.TaxEffectiveDate
+              field = "TaxEffectiveDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.TaxName
+              field = "TaxName"
             },
           ]
         },
@@ -105,11 +105,11 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.TaxRate
+              field = "TaxRate"
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.TaxCode
+              field = "TaxCode"
             },
           ]
         },
@@ -126,11 +126,11 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemoLine.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemoLine.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -138,11 +138,11 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemoLine.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemoLine.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

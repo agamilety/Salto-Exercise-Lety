@@ -11,11 +11,11 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.NickName
+              field = "NickName"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.InputCardNumber
+              field = "InputCardNumber"
             },
             {
               behavior = "Edit"
@@ -23,23 +23,23 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardHolderName
+              field = "CardHolderName"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.ExpiryMonth
+              field = "ExpiryMonth"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardBin
+              field = "CardBin"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.StartMonth
+              field = "StartMonth"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardHolderFirstName
+              field = "CardHolderFirstName"
             },
           ]
         },
@@ -47,35 +47,35 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardCategory
+              field = "CardCategory"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CardPaymentMethod.field.DisplayCardNumber
+              field = "DisplayCardNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.AutoCardType
+              field = "AutoCardType"
             },
             {
               behavior = "Required"
-              field = salesforce.CardPaymentMethod.field.Status
+              field = "Status"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.ExpiryYear
+              field = "ExpiryYear"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardLastFour
+              field = "CardLastFour"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.StartYear
+              field = "StartYear"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CardHolderLastName
+              field = "CardHolderLastName"
             },
           ]
         },
@@ -100,7 +100,7 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.GatewayToken
+              field = "GatewayToken"
             },
           ]
         },
@@ -117,15 +117,15 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.CompanyName
+              field = "CompanyName"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.PaymentMethodAddress
+              field = "PaymentMethodAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.Email
+              field = "Email"
             },
           ]
         },
@@ -137,7 +137,7 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CardPaymentMethod.field.Comments
+              field = "Comments"
             },
           ]
         },

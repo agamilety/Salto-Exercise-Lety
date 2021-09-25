@@ -11,7 +11,7 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Description
+              field = "Description"
             },
           ]
         },
@@ -28,55 +28,55 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.DandBCompany.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Address
+              field = "Address"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.CountryAccessCode
+              field = "CountryAccessCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SalesVolume
+              field = "SalesVolume"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.CurrencyCode
+              field = "CurrencyCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.PublicIndicator
+              field = "PublicIndicator"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.StockExchange
+              field = "StockExchange"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FipsMsaCode
+              field = "FipsMsaCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.TradeStyle1
+              field = "TradeStyle1"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.PrimarySic
+              field = "PrimarySic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.PrimaryNaics
+              field = "PrimaryNaics"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Longitude
+              field = "Longitude"
             },
           ]
         },
@@ -84,55 +84,55 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.URL
+              field = "URL"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.MailingAddress
+              field = "MailingAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Fax
+              field = "Fax"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.YearStarted
+              field = "YearStarted"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SalesVolumeReliability
+              field = "SalesVolumeReliability"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.LocationStatus
+              field = "LocationStatus"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.OutOfBusiness
+              field = "OutOfBusiness"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.StockSymbol
+              field = "StockSymbol"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FipsMsaDesc
+              field = "FipsMsaDesc"
             },
             {
               behavior = "Required"
-              field = salesforce.DandBCompany.field.DunsNumber
+              field = "DunsNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.PrimarySicDesc
+              field = "PrimarySicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.PrimaryNaicsDesc
+              field = "PrimaryNaicsDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Latitude
+              field = "Latitude"
             },
           ]
         },
@@ -149,43 +149,43 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SecondSic
+              field = "SecondSic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ThirdSic
+              field = "ThirdSic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FourthSic
+              field = "FourthSic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FifthSic
+              field = "FifthSic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SixthSic
+              field = "SixthSic"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SecondNaics
+              field = "SecondNaics"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ThirdNaics
+              field = "ThirdNaics"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FourthNaics
+              field = "FourthNaics"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FifthNaics
+              field = "FifthNaics"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SixthNaics
+              field = "SixthNaics"
             },
           ]
         },
@@ -193,43 +193,43 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SecondSicDesc
+              field = "SecondSicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ThirdSicDesc
+              field = "ThirdSicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FourthSicDesc
+              field = "FourthSicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FifthSicDesc
+              field = "FifthSicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SixthSicDesc
+              field = "SixthSicDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SecondNaicsDesc
+              field = "SecondNaicsDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ThirdNaicsDesc
+              field = "ThirdNaicsDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FourthNaicsDesc
+              field = "FourthNaicsDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FifthNaicsDesc
+              field = "FifthNaicsDesc"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SixthNaicsDesc
+              field = "SixthNaicsDesc"
             },
           ]
         },
@@ -246,51 +246,51 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.EmployeesTotal
+              field = "EmployeesTotal"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.EmployeesHere
+              field = "EmployeesHere"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.FamilyMembers
+              field = "FamilyMembers"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.LegalStatus
+              field = "LegalStatus"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ImportExportAgent
+              field = "ImportExportAgent"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.WomenOwned
+              field = "WomenOwned"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.OwnOrRent
+              field = "OwnOrRent"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.NationalId
+              field = "NationalId"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.GeoCodeAccuracy
+              field = "GeoCodeAccuracy"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.TradeStyle2
+              field = "TradeStyle2"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.TradeStyle4
+              field = "TradeStyle4"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.MarketingSegmentationCluster
+              field = "MarketingSegmentationCluster"
             },
           ]
         },
@@ -298,47 +298,47 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.EmployeesTotalReliability
+              field = "EmployeesTotalReliability"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.EmployeesHereReliability
+              field = "EmployeesHereReliability"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.GlobalUltimateTotalEmployees
+              field = "GlobalUltimateTotalEmployees"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.Subsidiary
+              field = "Subsidiary"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.SmallBusiness
+              field = "SmallBusiness"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.MinorityOwned
+              field = "MinorityOwned"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.UsTaxId
+              field = "UsTaxId"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.NationalIdType
+              field = "NationalIdType"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.MarketingPreScreen
+              field = "MarketingPreScreen"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.TradeStyle3
+              field = "TradeStyle3"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.TradeStyle5
+              field = "TradeStyle5"
             },
           ]
         },
@@ -355,15 +355,15 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.GlobalUltimateBusinessName
+              field = "GlobalUltimateBusinessName"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ParentOrHqBusinessName
+              field = "ParentOrHqBusinessName"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.DomesticUltimateBusinessName
+              field = "DomesticUltimateBusinessName"
             },
           ]
         },
@@ -371,15 +371,15 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.GlobalUltimateDunsNumber
+              field = "GlobalUltimateDunsNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.ParentOrHqDunsNumber
+              field = "ParentOrHqDunsNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.DandBCompany.field.DomesticUltimateDunsNumber
+              field = "DomesticUltimateDunsNumber"
             },
           ]
         },

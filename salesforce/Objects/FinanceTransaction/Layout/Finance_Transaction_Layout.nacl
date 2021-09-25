@@ -43,15 +43,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalReferenceEntityType
+              field = "OriginalReferenceEntityType"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalEventAction
+              field = "OriginalEventAction"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalEventType
+              field = "OriginalEventType"
             },
           ]
         },
@@ -68,19 +68,19 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.FinanceTransaction.field.TotalAmountWithTax
+              field = "TotalAmountWithTax"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.ChargeAmount
+              field = "ChargeAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.Subtotal
+              field = "Subtotal"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.ImpactAmount
+              field = "ImpactAmount"
             },
           ]
         },
@@ -88,15 +88,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.ResultingBalance
+              field = "ResultingBalance"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.AdjustmentAmount
+              field = "AdjustmentAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.TaxAmount
+              field = "TaxAmount"
             },
           ]
         },
@@ -113,11 +113,11 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.FinanceTransaction.field.TransactionDate
+              field = "TransactionDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.DueDate
+              field = "DueDate"
             },
           ]
         },
@@ -125,7 +125,7 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.FinanceTransaction.field.EffectiveDate
+              field = "EffectiveDate"
             },
           ]
         },
@@ -167,15 +167,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalDebitGlAccountName
+              field = "OriginalDebitGlAccountName"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalCreditGlAccountName
+              field = "OriginalCreditGlAccountName"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalGlTreatmentName
+              field = "OriginalGlTreatmentName"
             },
           ]
         },
@@ -183,15 +183,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalDebitGlAccountNumber
+              field = "OriginalDebitGlAccountNumber"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalCreditGlAccountNumber
+              field = "OriginalCreditGlAccountNumber"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalGlRuleName
+              field = "OriginalGlRuleName"
             },
           ]
         },
@@ -208,15 +208,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalFinancePeriodName
+              field = "OriginalFinancePeriodName"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalFinancePeriodStartDate
+              field = "OriginalFinancePeriodStartDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalFinanceBookName
+              field = "OriginalFinanceBookName"
             },
           ]
         },
@@ -224,11 +224,11 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalFinancePeriodStatus
+              field = "OriginalFinancePeriodStatus"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.OriginalFinancePeriodEndDate
+              field = "OriginalFinancePeriodEndDate"
             },
           ]
         },
@@ -245,11 +245,11 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.FinanceSystemName
+              field = "FinanceSystemName"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.FinanceSystemIntegrationMode
+              field = "FinanceSystemIntegrationMode"
             },
           ]
         },
@@ -257,11 +257,11 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.FinanceSystemTransactionNumber
+              field = "FinanceSystemTransactionNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.FinanceTransaction.field.FinanceSystemIntegrationStatus
+              field = "FinanceSystemIntegrationStatus"
             },
           ]
         },
@@ -278,15 +278,15 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.CreatedDate
+              field = "CreatedDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.CreationMode
+              field = "CreationMode"
             },
           ]
         },
@@ -294,11 +294,11 @@ salesforce.Layout FinanceTransaction_Finance_Transaction_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.FinanceTransaction.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

@@ -34,7 +34,7 @@ salesforce.Layout AssignedResource_Assigned_Resource_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AssignedResource.field.IsRequiredResource
+              field = "IsRequiredResource"
             },
           ]
         },
@@ -51,7 +51,7 @@ salesforce.Layout AssignedResource_Assigned_Resource_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssignedResource.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -59,7 +59,7 @@ salesforce.Layout AssignedResource_Assigned_Resource_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssignedResource.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

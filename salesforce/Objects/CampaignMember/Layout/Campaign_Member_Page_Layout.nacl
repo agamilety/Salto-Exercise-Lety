@@ -27,7 +27,7 @@ salesforce.Layout CampaignMember_Campaign_Member_Page_Layout@bsss {
             },
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.HasResponded
+              field = "HasResponded"
             },
           ]
         },
@@ -63,19 +63,19 @@ salesforce.Layout CampaignMember_Campaign_Member_Page_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.CompanyOrAccount
+              field = "CompanyOrAccount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.Title
+              field = "Title"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.Email
+              field = "Email"
             },
           ]
         },
@@ -108,7 +108,7 @@ salesforce.Layout CampaignMember_Campaign_Member_Page_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -116,7 +116,7 @@ salesforce.Layout CampaignMember_Campaign_Member_Page_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CampaignMember.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

@@ -11,15 +11,15 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ApiAnomalyEventStore.field.ApiAnomalyEventNumber
+              field = "ApiAnomalyEventNumber"
             },
             {
               behavior = "Required"
-              field = salesforce.ApiAnomalyEventStore.field.EventIdentifier
+              field = "EventIdentifier"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.Summary
+              field = "Summary"
             },
           ]
         },
@@ -27,11 +27,11 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.ApiAnomalyEventStore.field.EventDate
+              field = "EventDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.Score
+              field = "Score"
             },
           ]
         },
@@ -48,19 +48,19 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.Operation
+              field = "Operation"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.RequestIdentifier
+              field = "RequestIdentifier"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.Uri
+              field = "Uri"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.SecurityEventData
+              field = "SecurityEventData"
             },
           ]
         },
@@ -68,15 +68,15 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.QueriedEntities
+              field = "QueriedEntities"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.RowsProcessed
+              field = "RowsProcessed"
             },
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.UserAgent
+              field = "UserAgent"
             },
           ]
         },
@@ -101,7 +101,7 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ApiAnomalyEventStore.field.SourceIp
+              field = "SourceIp"
             },
           ]
         },

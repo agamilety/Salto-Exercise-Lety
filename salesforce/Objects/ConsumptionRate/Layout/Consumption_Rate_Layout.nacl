@@ -11,19 +11,19 @@ salesforce.Layout ConsumptionRate_Consumption_Rate_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.ConsumptionRate.field.ProcessingOrder
+              field = "ProcessingOrder"
             },
             {
               behavior = "Required"
-              field = salesforce.ConsumptionRate.field.LowerBound
+              field = "LowerBound"
             },
             {
               behavior = "Edit"
-              field = salesforce.ConsumptionRate.field.UpperBound
+              field = "UpperBound"
             },
             {
               behavior = "Required"
-              field = salesforce.ConsumptionRate.field.Price
+              field = "Price"
             },
           ]
         },
@@ -31,11 +31,11 @@ salesforce.Layout ConsumptionRate_Consumption_Rate_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ConsumptionRate.field.Description
+              field = "Description"
             },
             {
               behavior = "Required"
-              field = salesforce.ConsumptionRate.field.PricingMethod
+              field = "PricingMethod"
             },
             {
               behavior = "Required"
@@ -56,7 +56,7 @@ salesforce.Layout ConsumptionRate_Consumption_Rate_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ConsumptionRate.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -64,7 +64,7 @@ salesforce.Layout ConsumptionRate_Consumption_Rate_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ConsumptionRate.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

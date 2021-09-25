@@ -15,7 +15,7 @@ salesforce.Layout AssetRelationship_Asset_Relationship_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetRelationship.field.FromDate
+              field = "FromDate"
             },
             {
               behavior = "Edit"
@@ -31,7 +31,7 @@ salesforce.Layout AssetRelationship_Asset_Relationship_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetRelationship.field.ToDate
+              field = "ToDate"
             },
           ]
         },
@@ -48,7 +48,7 @@ salesforce.Layout AssetRelationship_Asset_Relationship_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetRelationship.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -56,7 +56,7 @@ salesforce.Layout AssetRelationship_Asset_Relationship_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetRelationship.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

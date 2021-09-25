@@ -10,11 +10,11 @@ salesforce.Layout ContentVersion_Content_Version_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.ContentVersion.field.Title
+              field = "Title"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContentVersion.field.Description
+              field = "Description"
             },
           ]
         },

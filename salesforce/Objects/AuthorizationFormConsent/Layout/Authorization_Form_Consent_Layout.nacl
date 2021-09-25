@@ -11,7 +11,7 @@ salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bss
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.AuthorizationFormConsent.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -19,11 +19,11 @@ salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bss
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedSourceType
+              field = "ConsentCapturedSourceType"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedDateTime
+              field = "ConsentCapturedDateTime"
             },
             {
               behavior = "Edit"
@@ -39,11 +39,11 @@ salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bss
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormConsent.field.ConsentCapturedSource
+              field = "ConsentCapturedSource"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormConsent.field.Status
+              field = "Status"
             },
           ]
         },

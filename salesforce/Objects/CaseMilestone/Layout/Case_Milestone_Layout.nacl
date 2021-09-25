@@ -22,15 +22,15 @@ salesforce.Layout CaseMilestone_Case_Milestone_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CaseMilestone.field.CompletionDate
+              field = "CompletionDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.IsViolated
+              field = "IsViolated"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.IsCompleted
+              field = "IsCompleted"
             },
           ]
         },
@@ -38,23 +38,23 @@ salesforce.Layout CaseMilestone_Case_Milestone_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.TargetDate
+              field = "TargetDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.TargetResponseInMins
+              field = "TargetResponseInMins"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.TimeRemainingInMins
+              field = "TimeRemainingInMins"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CaseMilestone.field.ElapsedTimeInMins
+              field = "ElapsedTimeInMins"
             },
           ]
         },

@@ -11,11 +11,11 @@ salesforce.Layout DataUseLegalBasis_Data_Use_Legal_Basis_Layout@bssss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.DataUseLegalBasis.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.DataUseLegalBasis.field.Description
+              field = "Description"
             },
           ]
         },
@@ -23,7 +23,7 @@ salesforce.Layout DataUseLegalBasis_Data_Use_Legal_Basis_Layout@bssss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.DataUseLegalBasis.field.Source
+              field = "Source"
             },
           ]
         },

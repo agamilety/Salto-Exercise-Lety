@@ -11,7 +11,7 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.PaymentAuthorizationNumber
+              field = "PaymentAuthorizationNumber"
             },
             {
               behavior = "Edit"
@@ -19,7 +19,7 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
             },
             {
               behavior = "Required"
-              field = salesforce.PaymentAuthorization.field.Amount
+              field = "Amount"
             },
             {
               behavior = "Edit"
@@ -27,11 +27,11 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.ExpirationDate
+              field = "ExpirationDate"
             },
             {
               behavior = "Required"
-              field = salesforce.PaymentAuthorization.field.ProcessingMode
+              field = "ProcessingMode"
             },
           ]
         },
@@ -39,11 +39,11 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.PaymentAuthorization.field.Status
+              field = "Status"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.Date
+              field = "Date"
             },
             {
               behavior = "Edit"
@@ -51,11 +51,11 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.EffectiveDate
+              field = "EffectiveDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.Comments
+              field = "Comments"
             },
           ]
         },
@@ -72,7 +72,7 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.SfResultCode
+              field = "SfResultCode"
             },
           ]
         },
@@ -93,15 +93,15 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayAuthCode
+              field = "GatewayAuthCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayResultCode
+              field = "GatewayResultCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayRefNumber
+              field = "GatewayRefNumber"
             },
           ]
         },
@@ -109,15 +109,15 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayDate
+              field = "GatewayDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayResultCodeDescription
+              field = "GatewayResultCodeDescription"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.GatewayRefDetails
+              field = "GatewayRefDetails"
             },
           ]
         },
@@ -134,19 +134,19 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.CreatedDate
+              field = "CreatedDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.MacAddress
+              field = "MacAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.Phone
+              field = "Phone"
             },
           ]
         },
@@ -154,19 +154,19 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentAuthorization.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.IpAddress
+              field = "IpAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentAuthorization.field.Email
+              field = "Email"
             },
           ]
         },

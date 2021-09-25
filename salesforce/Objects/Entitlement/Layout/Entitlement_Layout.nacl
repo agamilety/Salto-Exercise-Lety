@@ -14,7 +14,7 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Entitlement.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -34,11 +34,11 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Entitlement.field.IsPerIncident
+              field = "IsPerIncident"
             },
             {
               behavior = "Edit"
-              field = salesforce.Entitlement.field.CasesPerEntitlement
+              field = "CasesPerEntitlement"
             },
           ]
         },
@@ -46,19 +46,19 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Entitlement.field.Status
+              field = "Status"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Entitlement.field.StatusIndicator
+              field = "StatusIndicator"
             },
             {
               behavior = "Edit"
-              field = salesforce.Entitlement.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Entitlement.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Edit"
@@ -70,7 +70,7 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Entitlement.field.RemainingCases
+              field = "RemainingCases"
             },
           ]
         },
@@ -87,7 +87,7 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Entitlement.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -95,7 +95,7 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Entitlement.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

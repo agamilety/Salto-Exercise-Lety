@@ -11,7 +11,7 @@ salesforce.ListView Lead_Cold_Leads_Lead {
     "LEAD.UNREAD",
   ]
   filterScope = "Queue"
-  label = "Cold Leads"
+  label = "All Cold Leads"
   queue = "Cold_Leads"
   sharedTo = {
     allInternalUsers = ""

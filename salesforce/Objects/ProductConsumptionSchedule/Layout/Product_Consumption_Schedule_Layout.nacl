@@ -36,7 +36,7 @@ salesforce.Layout ProductConsumptionSchedule_Product_Consumption_Schedule_Layout
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ProductConsumptionSchedule.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -44,7 +44,7 @@ salesforce.Layout ProductConsumptionSchedule_Product_Consumption_Schedule_Layout
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.ProductConsumptionSchedule.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

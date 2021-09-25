@@ -11,7 +11,7 @@ salesforce.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bsss
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.ContactPointTypeConsent.field.Name
+              field = "Name"
             },
             {
               behavior = "Required"
@@ -23,15 +23,15 @@ salesforce.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bsss
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.EffectiveFrom
+              field = "EffectiveFrom"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.CaptureSource
+              field = "CaptureSource"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.CaptureDate
+              field = "CaptureDate"
             },
             {
               behavior = "Edit"
@@ -43,23 +43,23 @@ salesforce.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bsss
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.ContactPointType
+              field = "ContactPointType"
             },
             {
               behavior = "Required"
-              field = salesforce.ContactPointTypeConsent.field.PrivacyConsentStatus
+              field = "PrivacyConsentStatus"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.EffectiveTo
+              field = "EffectiveTo"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.CaptureContactPointType
+              field = "CaptureContactPointType"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointTypeConsent.field.DoubleConsentCaptureDate
+              field = "DoubleConsentCaptureDate"
             },
           ]
         },

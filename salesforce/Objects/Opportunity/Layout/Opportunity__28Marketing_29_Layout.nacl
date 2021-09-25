@@ -18,7 +18,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
             },
             {
               behavior = "Required"
-              field = salesforce.Opportunity.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -42,7 +42,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Opportunity.field.IsPrivate
+              field = "IsPrivate"
             },
           ]
         },
@@ -59,15 +59,15 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Opportunity.field.Amount
+              field = "Amount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Opportunity.field.ExpectedRevenue
+              field = "ExpectedRevenue"
             },
             {
               behavior = "Required"
-              field = salesforce.Opportunity.field.CloseDate
+              field = "CloseDate"
             },
           ]
         },
@@ -75,7 +75,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Opportunity.field.NextStep
+              field = "NextStep"
             },
             {
               behavior = "Required"
@@ -83,7 +83,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Opportunity.field.Probability
+              field = "Probability"
             },
           ]
         },
@@ -125,7 +125,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Opportunity.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -133,7 +133,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Opportunity.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -150,7 +150,7 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Opportunity.field.Description
+              field = "Description"
             },
           ]
         },

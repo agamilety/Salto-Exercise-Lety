@@ -15,7 +15,7 @@ salesforce.Layout Order_Order_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Order.field.OrderNumber
+              field = "OrderNumber"
             },
             {
               behavior = "Required"
@@ -23,7 +23,7 @@ salesforce.Layout Order_Order_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Order.field.EffectiveDate
+              field = "EffectiveDate"
             },
             {
               behavior = "Edit"
@@ -35,7 +35,7 @@ salesforce.Layout Order_Order_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Order.field.BillingAddress
+              field = "BillingAddress"
             },
             {
               behavior = "Readonly"
@@ -51,7 +51,7 @@ salesforce.Layout Order_Order_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Order.field.TotalAmount
+              field = "TotalAmount"
             },
             {
               behavior = "Edit"
@@ -63,11 +63,11 @@ salesforce.Layout Order_Order_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Order.field.ShippingAddress
+              field = "ShippingAddress"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Order.field.ActivatedDate
+              field = "ActivatedDate"
             },
           ]
         },
@@ -84,7 +84,7 @@ salesforce.Layout Order_Order_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Order.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -92,7 +92,7 @@ salesforce.Layout Order_Order_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Order.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -109,7 +109,7 @@ salesforce.Layout Order_Order_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Order.field.Description
+              field = "Description"
             },
           ]
         },

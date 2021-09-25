@@ -19,7 +19,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Contact.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -27,15 +27,15 @@ salesforce.Layout Contact_Contact_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Title
+              field = "Title"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Department
+              field = "Department"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Birthdate
+              field = "Birthdate"
             },
             {
               behavior = "Edit"
@@ -51,35 +51,35 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.HomePhone
+              field = "HomePhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.MobilePhone
+              field = "MobilePhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.OtherPhone
+              field = "OtherPhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Fax
+              field = "Fax"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Email
+              field = "Email"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantName
+              field = "AssistantName"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantPhone
+              field = "AssistantPhone"
             },
           ]
         },
@@ -96,7 +96,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.MailingAddress
+              field = "MailingAddress"
             },
           ]
         },
@@ -104,7 +104,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.OtherAddress
+              field = "OtherAddress"
             },
           ]
         },
@@ -146,7 +146,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -154,7 +154,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -171,7 +171,7 @@ salesforce.Layout Contact_Contact_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Description
+              field = "Description"
             },
           ]
         },

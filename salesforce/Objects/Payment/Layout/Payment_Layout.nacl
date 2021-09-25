@@ -11,7 +11,7 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.PaymentNumber
+              field = "PaymentNumber"
             },
             {
               behavior = "Edit"
@@ -19,7 +19,7 @@ salesforce.Layout Payment_Payment_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Payment.field.Amount
+              field = "Amount"
             },
             {
               behavior = "Edit"
@@ -31,19 +31,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Payment.field.ProcessingMode
+              field = "ProcessingMode"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.Balance
+              field = "Balance"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.TotalRefundApplied
+              field = "TotalRefundApplied"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.Date
+              field = "Date"
             },
           ]
         },
@@ -51,11 +51,11 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Payment.field.Status
+              field = "Status"
             },
             {
               behavior = "Required"
-              field = salesforce.Payment.field.Type
+              field = "Type"
             },
             {
               behavior = "Edit"
@@ -63,19 +63,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.EffectiveDate
+              field = "EffectiveDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.Comments
+              field = "Comments"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.TotalRefundUnapplied
+              field = "TotalRefundUnapplied"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.NetRefundApplied
+              field = "NetRefundApplied"
             },
           ]
         },
@@ -92,19 +92,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.ImpactAmount
+              field = "ImpactAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationDate
+              field = "CancellationDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.SfResultCode
+              field = "SfResultCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationSfResultCode
+              field = "CancellationSfResultCode"
             },
           ]
         },
@@ -112,7 +112,7 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationEffectiveDate
+              field = "CancellationEffectiveDate"
             },
           ]
         },
@@ -133,19 +133,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.GatewayResultCode
+              field = "GatewayResultCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.GatewayRefNumber
+              field = "GatewayRefNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationGatewayDate
+              field = "CancellationGatewayDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationGatewayRefNumber
+              field = "CancellationGatewayRefNumber"
             },
           ]
         },
@@ -153,19 +153,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.GatewayDate
+              field = "GatewayDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.GatewayResultCodeDescription
+              field = "GatewayResultCodeDescription"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.GatewayRefDetails
+              field = "GatewayRefDetails"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.CancellationGatewayResultCode
+              field = "CancellationGatewayResultCode"
             },
           ]
         },
@@ -182,19 +182,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.CreatedDate
+              field = "CreatedDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.MacAddress
+              field = "MacAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.Phone
+              field = "Phone"
             },
           ]
         },
@@ -202,19 +202,19 @@ salesforce.Layout Payment_Payment_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Payment.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.IpAddress
+              field = "IpAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.Payment.field.Email
+              field = "Email"
             },
           ]
         },

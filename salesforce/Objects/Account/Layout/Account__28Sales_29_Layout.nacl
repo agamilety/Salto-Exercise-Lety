@@ -18,19 +18,19 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Required"
-              field = salesforce.Account.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.ParentId
+              field = "ParentId"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.AccountNumber
+              field = "AccountNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Site
+              field = "Site"
             },
             {
               behavior = "Edit"
@@ -38,15 +38,15 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Sic
+              field = "Sic"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.AnnualRevenue
+              field = "AnnualRevenue"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.NumberOfEmployees
+              field = "NumberOfEmployees"
             },
           ]
         },
@@ -70,19 +70,19 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Fax
+              field = "Fax"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Website
+              field = "Website"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.TickerSymbol
+              field = "TickerSymbol"
             },
             {
               behavior = "Edit"
@@ -107,7 +107,7 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.BillingAddress
+              field = "BillingAddress"
             },
           ]
         },
@@ -115,7 +115,7 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.ShippingAddress
+              field = "ShippingAddress"
             },
           ]
         },
@@ -165,7 +165,7 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Account.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -173,7 +173,7 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Account.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -190,7 +190,7 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Description
+              field = "Description"
             },
           ]
         },

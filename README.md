@@ -15,3 +15,4 @@ This exercise includes the following steps in the Salesforce Development environ
 - If the score is 10 or above, the lead is a Hot Lead. The salto workspace is also created, however the fetch instruction is missing a variable
 7. Creation of the Salto environment for code control of all the SF changes
 8. Addition of the files to git repository (Salto-Exercise-Lety) with a branch for each change
+

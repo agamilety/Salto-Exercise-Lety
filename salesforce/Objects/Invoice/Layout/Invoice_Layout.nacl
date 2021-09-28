@@ -11,11 +11,11 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.DocumentNumber
+              field = "DocumentNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.Invoice.field.InvoiceNumber
+              field = "InvoiceNumber"
             },
             {
               behavior = "Required"
@@ -35,19 +35,19 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Invoice.field.InvoiceDate
+              field = "InvoiceDate"
             },
             {
               behavior = "Required"
-              field = salesforce.Invoice.field.DueDate
+              field = "DueDate"
             },
             {
               behavior = "Required"
-              field = salesforce.Invoice.field.Status
+              field = "Status"
             },
             {
               behavior = "Edit"
-              field = salesforce.Invoice.field.Description
+              field = "Description"
             },
           ]
         },
@@ -64,23 +64,23 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.TotalChargeAmount
+              field = "TotalChargeAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.TotalAdjustmentAmount
+              field = "TotalAdjustmentAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.TotalTaxAmount
+              field = "TotalTaxAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.TotalAmount
+              field = "TotalAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.TotalAmountWithTax
+              field = "TotalAmountWithTax"
             },
           ]
         },
@@ -97,11 +97,11 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -109,11 +109,11 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Invoice.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

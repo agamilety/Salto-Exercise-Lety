@@ -20,12 +20,13 @@ type salesforce.Account {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Picklist SLA__c {
     apiName = "Account.SLA__c"
@@ -53,12 +54,13 @@ type salesforce.Account {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
@@ -76,24 +78,26 @@ type salesforce.Account {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Number NumberofLocations__c {
     apiName = "Account.NumberofLocations__c"
     label = "Number of Locations"
     precision = 3
     scale = 0
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
   salesforce.Picklist UpsellOpportunity__c {
     apiName = "Account.UpsellOpportunity__c"
@@ -116,32 +120,35 @@ type salesforce.Account {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Text SLASerialNumber__c {
     apiName = "Account.SLASerialNumber__c"
     label = "SLA Serial Number"
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    caseSensitive = false
+    
     length = 10
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
   salesforce.Date SLAExpirationDate__c {
     apiName = "Account.SLAExpirationDate__c"
     label = "SLA Expiration Date"
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
 }

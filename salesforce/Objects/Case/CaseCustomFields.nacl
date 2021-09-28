@@ -2,16 +2,17 @@ type salesforce.Case {
   salesforce.Text EngineeringReqNumber__c {
     apiName = "Case.EngineeringReqNumber__c"
     label = "Engineering Req Number"
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    caseSensitive = false
+    
     length = 12
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
     trackHistory = "false"
     trackTrending = false
+    _hidden_value = true
   }
   salesforce.Picklist SLAViolation__c {
     apiName = "Case.SLAViolation__c"
@@ -29,14 +30,15 @@ type salesforce.Case {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     trackHistory = "false"
     trackTrending = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Picklist Product__c {
     apiName = "Case.Product__c"
@@ -89,14 +91,15 @@ type salesforce.Case {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     trackHistory = "false"
     trackTrending = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Picklist PotentialLiability__c {
     apiName = "Case.PotentialLiability__c"
@@ -114,13 +117,14 @@ type salesforce.Case {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     trackHistory = "false"
     trackTrending = false
     sorted = false
+    _hidden_value = true
   }
 }

@@ -11,27 +11,27 @@ salesforce.Layout Individual_Individual_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Individual.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.BirthDate
+              field = "BirthDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.HasOptedOutProcessing
+              field = "HasOptedOutProcessing"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.HasOptedOutSolicit
+              field = "HasOptedOutSolicit"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.SendIndividualData
+              field = "SendIndividualData"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.CanStorePiiElsewhere
+              field = "CanStorePiiElsewhere"
             },
           ]
         },
@@ -43,19 +43,19 @@ salesforce.Layout Individual_Individual_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.HasOptedOutGeoTracking
+              field = "HasOptedOutGeoTracking"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.HasOptedOutProfiling
+              field = "HasOptedOutProfiling"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.HasOptedOutTracking
+              field = "HasOptedOutTracking"
             },
             {
               behavior = "Edit"
-              field = salesforce.Individual.field.ShouldForget
+              field = "ShouldForget"
             },
             {
               behavior = "Edit"
@@ -76,11 +76,11 @@ salesforce.Layout Individual_Individual_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Individual.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Individual.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -88,11 +88,11 @@ salesforce.Layout Individual_Individual_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Individual.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Individual.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

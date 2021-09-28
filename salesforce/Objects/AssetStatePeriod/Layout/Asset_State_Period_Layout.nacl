@@ -11,27 +11,27 @@ salesforce.Layout AssetStatePeriod_Asset_State_Period_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetStatePeriod.field.AssetStatePeriodNumber
+              field = "AssetStatePeriodNumber"
             },
             {
               behavior = "Required"
-              field = salesforce.AssetStatePeriod.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetStatePeriod.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Required"
-              field = salesforce.AssetStatePeriod.field.Quantity
+              field = "Quantity"
             },
             {
               behavior = "Required"
-              field = salesforce.AssetStatePeriod.field.Amount
+              field = "Amount"
             },
             {
               behavior = "Required"
-              field = salesforce.AssetStatePeriod.field.Mrr
+              field = "Mrr"
             },
           ]
         },
@@ -56,11 +56,11 @@ salesforce.Layout AssetStatePeriod_Asset_State_Period_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetStatePeriod.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.AssetStatePeriod.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -68,11 +68,11 @@ salesforce.Layout AssetStatePeriod_Asset_State_Period_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetStatePeriod.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.AssetStatePeriod.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

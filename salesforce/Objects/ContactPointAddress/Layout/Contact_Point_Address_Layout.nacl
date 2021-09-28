@@ -11,7 +11,7 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.ContactPointAddress.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -19,7 +19,7 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointAddress.field.Address
+              field = "Address"
             },
           ]
         },
@@ -31,7 +31,7 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointAddress.field.IsDefault
+              field = "IsDefault"
             },
           ]
         },

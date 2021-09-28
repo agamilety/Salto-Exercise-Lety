@@ -14,12 +14,12 @@ salesforce.QuickAction Case_LogACall@v {
         quickActionLayoutItems = [
           {
             emptySpace = false
-            field = salesforce.Case.field.Subject
+            field = "Subject"
             uiBehavior = "Edit"
           },
           {
             emptySpace = false
-            field = salesforce.Case.field.Description
+            field = "Description"
             uiBehavior = "Edit"
           },
           {

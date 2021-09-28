@@ -11,7 +11,7 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.AssetActionSourceNumber
+              field = "AssetActionSourceNumber"
             },
             {
               behavior = "Edit"
@@ -19,27 +19,27 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.ExternalReference
+              field = "ExternalReference"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.ProductAmount
+              field = "ProductAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.EstimatedTax
+              field = "EstimatedTax"
             },
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.Subtotal
+              field = "Subtotal"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.Quantity
+              field = "Quantity"
             },
           ]
         },
@@ -51,23 +51,23 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.ExternalReferenceDataSource
+              field = "ExternalReferenceDataSource"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.AdjustmentAmount
+              field = "AdjustmentAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.ActualTax
+              field = "ActualTax"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.AssetActionSource.field.TransactionDate
+              field = "TransactionDate"
             },
           ]
         },
@@ -84,11 +84,11 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -96,11 +96,11 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.AssetActionSource.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

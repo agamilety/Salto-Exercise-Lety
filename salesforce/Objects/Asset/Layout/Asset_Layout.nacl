@@ -15,7 +15,7 @@ salesforce.Layout Asset_Asset_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Asset.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -23,15 +23,15 @@ salesforce.Layout Asset_Asset_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Asset.field.ProductCode
+              field = "ProductCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.SerialNumber
+              field = "SerialNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.InstallDate
+              field = "InstallDate"
             },
             {
               behavior = "Edit"
@@ -39,11 +39,11 @@ salesforce.Layout Asset_Asset_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.Quantity
+              field = "Quantity"
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.Price
+              field = "Price"
             },
           ]
         },
@@ -59,15 +59,15 @@ salesforce.Layout Asset_Asset_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.IsCompetitorProduct
+              field = "IsCompetitorProduct"
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.PurchaseDate
+              field = "PurchaseDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.UsageEndDate
+              field = "UsageEndDate"
             },
           ]
         },
@@ -83,7 +83,7 @@ salesforce.Layout Asset_Asset_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Asset.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -91,7 +91,7 @@ salesforce.Layout Asset_Asset_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Asset.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -108,7 +108,7 @@ salesforce.Layout Asset_Asset_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Asset.field.Description
+              field = "Description"
             },
           ]
         },

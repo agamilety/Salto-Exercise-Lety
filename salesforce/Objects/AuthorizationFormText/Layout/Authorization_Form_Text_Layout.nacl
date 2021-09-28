@@ -11,15 +11,15 @@ salesforce.Layout AuthorizationFormText_Authorization_Form_Text_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.AuthorizationFormText.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormText.field.FullAuthorizationFormUrl
+              field = "FullAuthorizationFormUrl"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormText.field.SummaryAuthFormText
+              field = "SummaryAuthFormText"
             },
             {
               behavior = "Edit"
@@ -35,7 +35,7 @@ salesforce.Layout AuthorizationFormText_Authorization_Form_Text_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationFormText.field.Locale
+              field = "Locale"
             },
           ]
         },

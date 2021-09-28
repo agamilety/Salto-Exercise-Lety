@@ -24,7 +24,7 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Contract.field.ContractNumber
+              field = "ContractNumber"
             },
             {
               behavior = "Required"
@@ -36,11 +36,11 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.CustomerSignedTitle
+              field = "CustomerSignedTitle"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.CustomerSignedDate
+              field = "CustomerSignedDate"
             },
           ]
         },
@@ -52,19 +52,19 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Contract.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Contract.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Required"
-              field = salesforce.Contract.field.ContractTerm
+              field = "ContractTerm"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.OwnerExpirationNotice
+              field = "OwnerExpirationNotice"
             },
             {
               behavior = "Edit"
@@ -72,7 +72,7 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.CompanySignedDate
+              field = "CompanySignedDate"
             },
           ]
         },
@@ -89,7 +89,7 @@ salesforce.Layout Contract_Contract_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.BillingAddress
+              field = "BillingAddress"
             },
           ]
         },
@@ -110,7 +110,7 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Contract.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -118,11 +118,11 @@ salesforce.Layout Contract_Contract_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contract.field.ActivatedDate
+              field = "ActivatedDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Contract.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -139,11 +139,11 @@ salesforce.Layout Contract_Contract_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.SpecialTerms
+              field = "SpecialTerms"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contract.field.Description
+              field = "Description"
             },
           ]
         },

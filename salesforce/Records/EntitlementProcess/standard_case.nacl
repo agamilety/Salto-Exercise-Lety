@@ -3,9 +3,9 @@ salesforce.EntitlementProcess standard_case@s {
   SObjectType = salesforce.Case
   active = true
   description = "Runs the standard SLA process for Case."
-  entryStartDateField = salesforce.Case.field.CreatedDate
+  entryStartDateField = "Case.CreatedDate"
   exitCriteriaFilterItems = {
-    field = salesforce.Case.field.IsClosed
+    field = "Case.IsClosed"
     operation = "equals"
     value = "true"
   }

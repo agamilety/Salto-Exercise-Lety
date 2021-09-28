@@ -11,11 +11,11 @@ salesforce.Layout Product2_Product_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Product2.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.Product2.field.ProductCode
+              field = "ProductCode"
             },
           ]
         },
@@ -23,7 +23,7 @@ salesforce.Layout Product2_Product_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Product2.field.IsActive
+              field = "IsActive"
             },
             {
               behavior = "Edit"
@@ -43,7 +43,7 @@ salesforce.Layout Product2_Product_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Product2.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -51,7 +51,7 @@ salesforce.Layout Product2_Product_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Product2.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -68,7 +68,7 @@ salesforce.Layout Product2_Product_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Product2.field.Description
+              field = "Description"
             },
           ]
         },

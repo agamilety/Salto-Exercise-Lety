@@ -28,11 +28,11 @@ salesforce.Layout Event_Event_Layout@bs {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Event.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Event.field.Email
+              field = "Email"
             },
             {
               behavior = "Edit"
@@ -44,19 +44,19 @@ salesforce.Layout Event_Event_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Event.field.Location
+              field = "Location"
             },
             {
               behavior = "Required"
-              field = salesforce.Event.field.StartDateTime
+              field = "StartDateTime"
             },
             {
               behavior = "Required"
-              field = salesforce.Event.field.EndDateTime
+              field = "EndDateTime"
             },
             {
               behavior = "Edit"
-              field = salesforce.Event.field.IsAllDayEvent
+              field = "IsAllDayEvent"
             },
           ]
         },
@@ -87,7 +87,7 @@ salesforce.Layout Event_Event_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Event.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -95,7 +95,7 @@ salesforce.Layout Event_Event_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Event.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -112,7 +112,7 @@ salesforce.Layout Event_Event_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Event.field.Description
+              field = "Description"
             },
           ]
         },

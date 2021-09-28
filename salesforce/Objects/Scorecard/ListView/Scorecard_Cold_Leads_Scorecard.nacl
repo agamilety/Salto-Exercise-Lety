@@ -1,7 +1,7 @@
 salesforce.ListView Scorecard_Cold_Leads_Scorecard {
   fullName = "Scorecard.Cold_Leads_Scorecard"
   filterScope = "Queue"
-  label = "Cold Leads"
+  label = "All Cold Leads"
   queue = "Cold_Leads"
   sharedTo = {
     allInternalUsers = ""

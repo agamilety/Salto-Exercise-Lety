@@ -11,11 +11,11 @@ salesforce.Layout AuthorizationForm_Authorization_Form_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.AuthorizationForm.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationForm.field.EffectiveFromDate
+              field = "EffectiveFromDate"
             },
             {
               behavior = "Edit"
@@ -27,15 +27,15 @@ salesforce.Layout AuthorizationForm_Authorization_Form_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationForm.field.RevisionNumber
+              field = "RevisionNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationForm.field.EffectiveToDate
+              field = "EffectiveToDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.AuthorizationForm.field.IsSignatureRequired
+              field = "IsSignatureRequired"
             },
           ]
         },

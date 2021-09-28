@@ -19,7 +19,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Required"
-              field = salesforce.Contact.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -27,11 +27,11 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Title
+              field = "Title"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Department
+              field = "Department"
             },
             {
               behavior = "Edit"
@@ -47,7 +47,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Birthdate
+              field = "Birthdate"
             },
           ]
         },
@@ -55,35 +55,35 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.HomePhone
+              field = "HomePhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.MobilePhone
+              field = "MobilePhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.OtherPhone
+              field = "OtherPhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Fax
+              field = "Fax"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Email
+              field = "Email"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantName
+              field = "AssistantName"
             },
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.AssistantPhone
+              field = "AssistantPhone"
             },
             {
               behavior = "Edit"
@@ -104,7 +104,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.MailingAddress
+              field = "MailingAddress"
             },
           ]
         },
@@ -112,7 +112,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.OtherAddress
+              field = "OtherAddress"
             },
           ]
         },
@@ -136,7 +136,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -144,7 +144,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Contact.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -161,7 +161,7 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Contact.field.Description
+              field = "Description"
             },
           ]
         },

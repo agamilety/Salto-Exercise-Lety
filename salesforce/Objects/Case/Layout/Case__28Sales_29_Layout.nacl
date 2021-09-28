@@ -70,7 +70,7 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.CaseNumber
+              field = "CaseNumber"
             },
             {
               behavior = "Edit"
@@ -102,11 +102,11 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.ContactPhone
+              field = "ContactPhone"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.ContactEmail
+              field = "ContactEmail"
             },
             {
               behavior = "Required"
@@ -127,15 +127,15 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.SuppliedEmail
+              field = "SuppliedEmail"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.SuppliedName
+              field = "SuppliedName"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -143,15 +143,15 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.SuppliedCompany
+              field = "SuppliedCompany"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.SuppliedPhone
+              field = "SuppliedPhone"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.ClosedDate
+              field = "ClosedDate"
             },
           ]
         },
@@ -197,7 +197,7 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -205,7 +205,7 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Case.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -222,15 +222,15 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Case.field.Subject
+              field = "Subject"
             },
             {
               behavior = "Edit"
-              field = salesforce.Case.field.Description
+              field = "Description"
             },
             {
               behavior = "Edit"
-              field = salesforce.Case.field.Comments
+              field = "Comments"
             },
           ]
         },
@@ -352,27 +352,27 @@ salesforce.Layout Case_Case__28Sales_29_Layout@bspps {
         posY = 1
       },
       {
-        field = salesforce.Case.field.ContactPhone
+        field = "ContactPhone"
         posX = 0
         posY = 2
       },
       {
-        field = salesforce.Case.field.CaseNumber
+        field = "CaseNumber"
         posX = 1
         posY = 0
       },
       {
-        field = salesforce.Case.field.CreatedDate
+        field = "CreatedDate"
         posX = 1
         posY = 1
       },
       {
-        field = salesforce.Case.field.Subject
+        field = "Subject"
         posX = 1
         posY = 2
       },
       {
-        field = salesforce.Case.field.Description
+        field = "Description"
         posX = 1
         posY = 3
       },

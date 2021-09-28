@@ -15,11 +15,11 @@ salesforce.Layout EmailMessage_Email_Message_Layout@bss {
             },
             {
               behavior = "Readonly"
-              field = salesforce.EmailMessage.field.MessageDate
+              field = "MessageDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EmailMessage.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -27,11 +27,11 @@ salesforce.Layout EmailMessage_Email_Message_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.EmailMessage.field.Status
+              field = "Status"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EmailMessage.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -48,23 +48,23 @@ salesforce.Layout EmailMessage_Email_Message_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.FromAddress
+              field = "FromAddress"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EmailMessage.field.FromName
+              field = "FromName"
             },
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.ToAddress
+              field = "ToAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.CcAddress
+              field = "CcAddress"
             },
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.BccAddress
+              field = "BccAddress"
             },
           ]
         },
@@ -81,15 +81,15 @@ salesforce.Layout EmailMessage_Email_Message_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.Subject
+              field = "Subject"
             },
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.HtmlBody
+              field = "HtmlBody"
             },
             {
               behavior = "Edit"
-              field = salesforce.EmailMessage.field.TextBody
+              field = "TextBody"
             },
           ]
         },

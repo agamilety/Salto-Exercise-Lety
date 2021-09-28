@@ -11,11 +11,11 @@ salesforce.Layout ContactPointEmail_Contact_Point_Email_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ContactPointEmail.field.IsPrimary
+              field = "IsPrimary"
             },
             {
               behavior = "Required"
-              field = salesforce.ContactPointEmail.field.EmailAddress
+              field = "EmailAddress"
             },
             {
               behavior = "Edit"

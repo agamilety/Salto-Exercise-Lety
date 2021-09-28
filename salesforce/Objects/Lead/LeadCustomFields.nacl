@@ -2,14 +2,15 @@ type salesforce.Lead {
   salesforce.Text SICCode__c {
     apiName = "Lead.SICCode__c"
     label = "SIC Code"
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    caseSensitive = false
+    
     length = 15
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
   salesforce.Picklist ProductInterest__c {
     apiName = "Lead.ProductInterest__c"
@@ -32,12 +33,13 @@ type salesforce.Lead {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Picklist Primary__c {
     apiName = "Lead.Primary__c"
@@ -55,59 +57,61 @@ type salesforce.Lead {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Text CurrentGenerators__c {
     apiName = "Lead.CurrentGenerators__c"
     label = "Current Generator(s)"
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    caseSensitive = false
+    
     length = 100
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
   salesforce.Number NumberofLocations__c {
     apiName = "Lead.NumberofLocations__c"
     label = "Number of Locations"
     precision = 3
     scale = 0
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
   salesforce.Number Score__c {
     apiName = "Lead.Score__c"
     label = "Score"
     precision = 18
     scale = 0
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
-  salesforce.Text saltoQuickStartField {
-     length = 32
-  apiName = "Lead.saltoQuickStartField__c"
-    label = "saltoQuickStartField"
-    createable = true
-    updateable = true
-    unique = false
-    caseSensitive = false
-    queryable = true
+  
+  salesforce.Text saltoQuickStartField__c {
+    apiName = "Lead.saltoQuickStartField__c"
     externalId = false
+    label = "saltoQuickStartField"
+    length = 32
     trackFeedHistory = false
+    unique = false
+    _hidden_value = true
   }
 }

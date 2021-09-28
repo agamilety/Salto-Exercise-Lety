@@ -18,11 +18,11 @@ salesforce.DuplicateRule Contact_Standard_Contact_Duplicate_Rule@vuuu {
           mappingFields = [
             {
               inputField = salesforce.Contact.field.AccountId
-              outputField = salesforce.Lead.field.Company
+              outputField = "Company"
             },
             {
-              inputField = salesforce.Contact.field.Email
-              outputField = salesforce.Lead.field.Email
+              inputField = "Email"
+              outputField = "Email"
             },
             {
               inputField = "FirstName"
@@ -45,12 +45,12 @@ salesforce.DuplicateRule Contact_Standard_Contact_Duplicate_Rule@vuuu {
               outputField = "Street"
             },
             {
-              inputField = salesforce.Contact.field.Phone
-              outputField = salesforce.Lead.field.Phone
+              inputField = "Phone"
+              outputField = "Phone"
             },
             {
-              inputField = salesforce.Contact.field.Title
-              outputField = salesforce.Lead.field.Title
+              inputField = "Title"
+              outputField = "Title"
             },
           ]
           outputObject = salesforce.Lead

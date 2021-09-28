@@ -1,7 +1,7 @@
 salesforce.ListView ServiceTerritory_Hot_Leads_ServiceTerritory {
   fullName = "ServiceTerritory.Hot_Leads_ServiceTerritory"
   filterScope = "Queue"
-  label = "Hot Leads"
+  label = "All Hot Leads"
   queue = "Hot_Leads"
   sharedTo = {
     allInternalUsers = ""

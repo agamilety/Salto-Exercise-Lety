@@ -11,15 +11,15 @@ salesforce.Layout OperatingHours_Operating_Hours_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.OperatingHours.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.OperatingHours.field.Description
+              field = "Description"
             },
             {
               behavior = "Required"
-              field = salesforce.OperatingHours.field.TimeZone
+              field = "TimeZone"
             },
           ]
         },
@@ -36,7 +36,7 @@ salesforce.Layout OperatingHours_Operating_Hours_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.OperatingHours.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -44,7 +44,7 @@ salesforce.Layout OperatingHours_Operating_Hours_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.OperatingHours.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },

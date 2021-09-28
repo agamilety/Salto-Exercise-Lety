@@ -19,19 +19,19 @@ salesforce.Layout OrderItem_Order_Product_Layout@bss {
             },
             {
               behavior = "Readonly"
-              field = salesforce.OrderItem.field.ProductCode
+              field = "ProductCode"
             },
             {
               behavior = "Readonly"
-              field = salesforce.OrderItem.field.ListPrice
+              field = "ListPrice"
             },
             {
               behavior = "Required"
-              field = salesforce.OrderItem.field.UnitPrice
+              field = "UnitPrice"
             },
             {
               behavior = "Required"
-              field = salesforce.OrderItem.field.Quantity
+              field = "Quantity"
             },
           ]
         },
@@ -39,7 +39,7 @@ salesforce.Layout OrderItem_Order_Product_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.OrderItem.field.TotalPrice
+              field = "TotalPrice"
             },
           ]
         },
@@ -56,7 +56,7 @@ salesforce.Layout OrderItem_Order_Product_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.OrderItem.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -64,7 +64,7 @@ salesforce.Layout OrderItem_Order_Product_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.OrderItem.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -81,7 +81,7 @@ salesforce.Layout OrderItem_Order_Product_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.OrderItem.field.Description
+              field = "Description"
             },
           ]
         },

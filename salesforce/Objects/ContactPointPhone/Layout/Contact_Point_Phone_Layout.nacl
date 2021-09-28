@@ -11,27 +11,27 @@ salesforce.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.IsPrimary
+              field = "IsPrimary"
             },
             {
               behavior = "Required"
-              field = salesforce.ContactPointPhone.field.TelephoneNumber
+              field = "TelephoneNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.AreaCode
+              field = "AreaCode"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.PhoneType
+              field = "PhoneType"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.IsPersonalPhone
+              field = "IsPersonalPhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.IsSmsCapable
+              field = "IsSmsCapable"
             },
             {
               behavior = "Edit"
@@ -43,15 +43,15 @@ salesforce.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.ExtensionNumber
+              field = "ExtensionNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.IsBusinessPhone
+              field = "IsBusinessPhone"
             },
             {
               behavior = "Edit"
-              field = salesforce.ContactPointPhone.field.IsFaxCapable
+              field = "IsFaxCapable"
             },
           ]
         },

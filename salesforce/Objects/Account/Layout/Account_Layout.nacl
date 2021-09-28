@@ -18,19 +18,19 @@ salesforce.Layout Account_Account_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Account.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.ParentId
+              field = "ParentId"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.AccountNumber
+              field = "AccountNumber"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Site
+              field = "Site"
             },
             {
               behavior = "Edit"
@@ -42,7 +42,7 @@ salesforce.Layout Account_Account_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.AnnualRevenue
+              field = "AnnualRevenue"
             },
           ]
         },
@@ -54,19 +54,19 @@ salesforce.Layout Account_Account_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Phone
+              field = "Phone"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Fax
+              field = "Fax"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Website
+              field = "Website"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.TickerSymbol
+              field = "TickerSymbol"
             },
             {
               behavior = "Edit"
@@ -74,11 +74,11 @@ salesforce.Layout Account_Account_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.NumberOfEmployees
+              field = "NumberOfEmployees"
             },
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Sic
+              field = "Sic"
             },
           ]
         },
@@ -95,7 +95,7 @@ salesforce.Layout Account_Account_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.BillingAddress
+              field = "BillingAddress"
             },
           ]
         },
@@ -103,7 +103,7 @@ salesforce.Layout Account_Account_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.ShippingAddress
+              field = "ShippingAddress"
             },
           ]
         },
@@ -165,7 +165,7 @@ salesforce.Layout Account_Account_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Account.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -173,7 +173,7 @@ salesforce.Layout Account_Account_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Account.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -190,7 +190,7 @@ salesforce.Layout Account_Account_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Account.field.Description
+              field = "Description"
             },
           ]
         },

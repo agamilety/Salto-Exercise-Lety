@@ -18,11 +18,11 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
             },
             {
               behavior = "Required"
-              field = salesforce.Campaign.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.IsActive
+              field = "IsActive"
             },
             {
               behavior = "Edit"
@@ -34,31 +34,31 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.EndDate
+              field = "EndDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.ExpectedRevenue
+              field = "ExpectedRevenue"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.BudgetedCost
+              field = "BudgetedCost"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.ActualCost
+              field = "ActualCost"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.ExpectedResponse
+              field = "ExpectedResponse"
             },
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.NumberSent
+              field = "NumberSent"
             },
             {
               behavior = "Edit"
@@ -70,35 +70,35 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfLeads
+              field = "NumberOfLeads"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfConvertedLeads
+              field = "NumberOfConvertedLeads"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfContacts
+              field = "NumberOfContacts"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfResponses
+              field = "NumberOfResponses"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfOpportunities
+              field = "NumberOfOpportunities"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.NumberOfWonOpportunities
+              field = "NumberOfWonOpportunities"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.AmountAllOpportunities
+              field = "AmountAllOpportunities"
             },
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.AmountWonOpportunities
+              field = "AmountWonOpportunities"
             },
           ]
         },
@@ -129,7 +129,7 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.CreatedById
+              field = "CreatedById"
             },
           ]
         },
@@ -137,7 +137,7 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.Campaign.field.LastModifiedById
+              field = "LastModifiedById"
             },
           ]
         },
@@ -154,7 +154,7 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.Campaign.field.Description
+              field = "Description"
             },
           ]
         },

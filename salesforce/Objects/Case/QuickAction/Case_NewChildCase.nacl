@@ -18,7 +18,7 @@ salesforce.QuickAction Case_NewChildCase@v {
           },
           {
             emptySpace = false
-            field = salesforce.Case.field.Subject
+            field = "Subject"
             uiBehavior = "Edit"
           },
           {
@@ -28,7 +28,7 @@ salesforce.QuickAction Case_NewChildCase@v {
           },
           {
             emptySpace = false
-            field = salesforce.Case.field.Description
+            field = "Description"
             uiBehavior = "Edit"
           },
         ]

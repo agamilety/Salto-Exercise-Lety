@@ -20,23 +20,25 @@ type salesforce.Contact {
       },
     ]
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
     externalId = false
     trackFeedHistory = false
     sorted = false
+    _hidden_value = true
   }
   salesforce.Text Languages__c {
     apiName = "Contact.Languages__c"
     label = "Languages"
-    createable = true
-    updateable = true
+    
+    
     unique = false
-    caseSensitive = false
+    
     length = 100
-    queryable = true
+    
     externalId = false
     trackFeedHistory = false
+    _hidden_value = true
   }
 }

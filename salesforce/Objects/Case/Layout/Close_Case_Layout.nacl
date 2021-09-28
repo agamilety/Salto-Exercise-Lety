@@ -19,7 +19,7 @@ salesforce.Layout CaseClose_Close_Case_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.Case.field.Comments
+              field = "Comments"
             },
           ]
         },

@@ -22,15 +22,15 @@ salesforce.Layout EntityMilestone_Object_Milestone_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.EntityMilestone.field.CompletionDate
+              field = "CompletionDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.IsViolated
+              field = "IsViolated"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.IsCompleted
+              field = "IsCompleted"
             },
           ]
         },
@@ -38,23 +38,23 @@ salesforce.Layout EntityMilestone_Object_Milestone_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.StartDate
+              field = "StartDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.TargetDate
+              field = "TargetDate"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.TargetResponseInMins
+              field = "TargetResponseInMins"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.TimeRemainingInMins
+              field = "TimeRemainingInMins"
             },
             {
               behavior = "Readonly"
-              field = salesforce.EntityMilestone.field.ElapsedTimeInMins
+              field = "ElapsedTimeInMins"
             },
           ]
         },

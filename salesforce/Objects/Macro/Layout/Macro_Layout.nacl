@@ -11,7 +11,7 @@ salesforce.Layout Macro_Macro_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.Macro.field.Name
+              field = "Name"
             },
             {
               behavior = "Edit"
@@ -19,11 +19,11 @@ salesforce.Layout Macro_Macro_Layout@bs {
             },
             {
               behavior = "Edit"
-              field = salesforce.Macro.field.Description
+              field = "Description"
             },
             {
               behavior = "Edit"
-              field = salesforce.Macro.field.StartingContext
+              field = "StartingContext"
             },
           ]
         },

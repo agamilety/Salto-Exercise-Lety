@@ -11,7 +11,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.PaymentLineInvoiceNumber
+              field = "PaymentLineInvoiceNumber"
             },
             {
               behavior = "Required"
@@ -19,7 +19,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Required"
-              field = salesforce.PaymentLineInvoice.field.HasBeenUnapplied
+              field = "HasBeenUnapplied"
             },
           ]
         },
@@ -27,7 +27,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.PaymentLineInvoice.field.Type
+              field = "Type"
             },
             {
               behavior = "Required"
@@ -35,7 +35,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.Comments
+              field = "Comments"
             },
           ]
         },
@@ -52,15 +52,15 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.PaymentLineInvoice.field.Amount
+              field = "Amount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.ImpactAmount
+              field = "ImpactAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.PaymentBalance
+              field = "PaymentBalance"
             },
           ]
         },
@@ -68,7 +68,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.EffectiveImpactAmount
+              field = "EffectiveImpactAmount"
             },
           ]
         },
@@ -89,11 +89,11 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.Date
+              field = "Date"
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.UnappliedDate
+              field = "UnappliedDate"
             },
           ]
         },
@@ -105,7 +105,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.AppliedDate
+              field = "AppliedDate"
             },
           ]
         },
@@ -122,11 +122,11 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -134,11 +134,11 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.PaymentLineInvoice.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

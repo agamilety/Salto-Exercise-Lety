@@ -1,7 +1,7 @@
 salesforce.ListView ServiceResource_Cold_Leads_ServiceResource {
   fullName = "ServiceResource.Cold_Leads_ServiceResource"
   filterScope = "Queue"
-  label = "Cold Leads"
+  label = "All Cold Leads"
   queue = "Cold_Leads"
   sharedTo = {
     allInternalUsers = ""

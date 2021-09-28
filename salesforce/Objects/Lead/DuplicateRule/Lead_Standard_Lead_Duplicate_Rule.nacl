@@ -17,12 +17,12 @@ salesforce.DuplicateRule Lead_Standard_Lead_Duplicate_Rule@vuuu {
               outputField = "MailingCity"
             },
             {
-              inputField = salesforce.Lead.field.Company
+              inputField = "Company"
               outputField = salesforce.Contact.field.AccountId
             },
             {
-              inputField = salesforce.Lead.field.Email
-              outputField = salesforce.Contact.field.Email
+              inputField = "Email"
+              outputField = "Email"
             },
             {
               inputField = "FirstName"
@@ -33,8 +33,8 @@ salesforce.DuplicateRule Lead_Standard_Lead_Duplicate_Rule@vuuu {
               outputField = "LastName"
             },
             {
-              inputField = salesforce.Lead.field.Phone
-              outputField = salesforce.Contact.field.Phone
+              inputField = "Phone"
+              outputField = "Phone"
             },
             {
               inputField = "PostalCode"
@@ -45,8 +45,8 @@ salesforce.DuplicateRule Lead_Standard_Lead_Duplicate_Rule@vuuu {
               outputField = "MailingStreet"
             },
             {
-              inputField = salesforce.Lead.field.Title
-              outputField = salesforce.Contact.field.Title
+              inputField = "Title"
+              outputField = "Title"
             },
           ]
           outputObject = salesforce.Contact

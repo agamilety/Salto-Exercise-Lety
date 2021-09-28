@@ -11,11 +11,11 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.CreditMemo.field.CreditMemoNumber
+              field = "CreditMemoNumber"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.DocumentNumber
+              field = "DocumentNumber"
             },
             {
               behavior = "Required"
@@ -23,7 +23,7 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemo.field.Description
+              field = "Description"
             },
             {
               behavior = "Edit"
@@ -35,11 +35,11 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.CreditMemo.field.CreditDate
+              field = "CreditDate"
             },
             {
               behavior = "Required"
-              field = salesforce.CreditMemo.field.Status
+              field = "Status"
             },
           ]
         },
@@ -56,23 +56,23 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.TotalChargeAmount
+              field = "TotalChargeAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.TotalAdjustmentAmount
+              field = "TotalAdjustmentAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.TotalTaxAmount
+              field = "TotalTaxAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.TotalAmount
+              field = "TotalAmount"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.TotalAmountWithTax
+              field = "TotalAmountWithTax"
             },
           ]
         },
@@ -89,11 +89,11 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -101,11 +101,11 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.CreditMemo.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

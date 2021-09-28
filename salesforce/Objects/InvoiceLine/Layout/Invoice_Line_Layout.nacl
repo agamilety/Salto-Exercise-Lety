@@ -11,15 +11,15 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.InvoiceLine.field.Name
+              field = "Name"
             },
             {
               behavior = "Required"
-              field = salesforce.InvoiceLine.field.InvoiceLineStartDate
+              field = "InvoiceLineStartDate"
             },
             {
               behavior = "Required"
-              field = salesforce.InvoiceLine.field.InvoiceLineEndDate
+              field = "InvoiceLineEndDate"
             },
             {
               behavior = "Edit"
@@ -31,7 +31,7 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.Description
+              field = "Description"
             },
           ]
         },
@@ -43,15 +43,15 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.ReferenceEntityItemType
+              field = "ReferenceEntityItemType"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.ReferenceEntityItemTypeCode
+              field = "ReferenceEntityItemTypeCode"
             },
             {
               behavior = "Required"
-              field = salesforce.InvoiceLine.field.Type
+              field = "Type"
             },
           ]
         },
@@ -72,23 +72,23 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.Quantity
+              field = "Quantity"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.UnitPrice
+              field = "UnitPrice"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.ChargeAmount
+              field = "ChargeAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.AdjustmentAmount
+              field = "AdjustmentAmount"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxAmount
+              field = "TaxAmount"
             },
           ]
         },
@@ -105,11 +105,11 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxRate
+              field = "TaxRate"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxName
+              field = "TaxName"
             },
           ]
         },
@@ -117,11 +117,11 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxEffectiveDate
+              field = "TaxEffectiveDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxCode
+              field = "TaxCode"
             },
           ]
         },
@@ -138,11 +138,11 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.InvoiceLine.field.CreatedById
+              field = "CreatedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.InvoiceLine.field.CreatedDate
+              field = "CreatedDate"
             },
           ]
         },
@@ -150,11 +150,11 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.InvoiceLine.field.LastModifiedById
+              field = "LastModifiedById"
             },
             {
               behavior = "Readonly"
-              field = salesforce.InvoiceLine.field.LastModifiedDate
+              field = "LastModifiedDate"
             },
           ]
         },

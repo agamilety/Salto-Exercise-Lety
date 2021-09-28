@@ -12,4 +12,7 @@ This exercise includes the following steps in the Salesforce Development environ
  6. Creation of a new assignment rule:
     - If the score is below 10, the lead is a Cold Lead.
     - If the score is 10 or above, the lead is a Hot Lead.
-The salto workspace is also created, however the fetch instruction is missing a variable
+ 7. The code is then pulled into the Salto workspace by using 'salto fetch'
+ 8. New changes can be made also using one of the text editors
+ 9. Once the code is ready it should be documented in your git readme
+ 10. The code can now be pushed in your Git repository by using standard git commands
